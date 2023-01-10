@@ -30,6 +30,7 @@ router.get("/", async function (req, res, next) {
       let currWeapon = {};
       currWeapon['name'] = weapon['name'];
       currWeapon['id'] = allWeaponIds[i];
+      currWeapon['icon'] = `https://api.genshin.dev/characters/${allWeaponIds[i]}/icon`;
       currWeapon['type'] = weapon['type'];
       reformattedWeaponData.push(currWeapon);
       i++;

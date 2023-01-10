@@ -25,11 +25,11 @@ router.get("/", async function (req, res, next) {
     // works bc lengths of allCharData and allCharIds are the same
     let i = 0;
 
-    // todo: add image
     for (char of allCharData) {
       let currChar = {};
       currChar['name'] = char['name'];
       currChar['id'] = allCharIds[i];
+      currChar['icon'] = `https://api.genshin.dev/characters/${allCharIds[i]}/icon`;
       currChar['vision'] = char['vision'];
       reformattedCharData.push(currChar);
       i++;
