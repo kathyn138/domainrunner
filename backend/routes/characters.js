@@ -1,40 +1,29 @@
-const express = require("express");
+const express = require('express');
 const router = new express.Router();
-const axios = require("axios");
+const axios = require('axios');
+
+const charData = require("../data/characters");
 
 /**
- * route for searching by character name
+ * route for getting all characters
  * GET ?name=character  =>  {character: character} */
 
 router.get("/", async function (req, res, next) {
   try {
-    // character id and data are stored separately on api
-    
-    const allCharIdCall = await axios.get(
-      "https://api.genshin.dev/characters"
-    );
-    let allCharIds = allCharIdCall.data;
-
-    const allCharCall = await axios.get(
-      "https://api.genshin.dev/characters/all"
-    );
-    let allCharData = allCharCall.data;
-
-
     let reformattedCharData = [];
-    // works bc lengths of allCharData and allCharIds are the same
-    let i = 0;
 
-    for (char of allCharData) {
+    for (char in charData) {
       let currChar = {};
-      currChar['name'] = char['name'];
-      currChar['id'] = allCharIds[i];
-      currChar['icon'] = `https://api.genshin.dev/characters/${allCharIds[i]}/icon`;
-      currChar['vision'] = char['vision'];
-      reformattedCharData.push(currChar);
-      i++;
-    }
+      let { name, id, element, rarity } = charData[char];
 
+      currChar['name'] = name;
+      currChar['id'] = id;
+      currChar['icon'] = `https://paimon.moe/images/characters/${id}.png`;
+      currChar['rarity'] = rarity;
+      currChar['element'] = element;
+      
+      reformattedCharData.push(currChar);
+    }
 
     return res.json(reformattedCharData);
   } catch (err) {
