@@ -1,39 +1,26 @@
 const express = require("express");
 const router = new express.Router();
-const axios = require("axios");
+const weaponData = require("../data/weaponList");
 
 /**
- * route for searching by weapon name
+ * route for all weapons
  * GET ?name=weapon  =>  {weapon: weapon} */
 
 router.get("/", async function (req, res, next) {
   try {
-    // weapon id and data are stored separately on api
-    
-    const allWeaponIdCall = await axios.get(
-      "https://api.genshin.dev/weapons"
-    );
-    let allWeaponIds = allWeaponIdCall.data;
-
-    const allWeaponCall = await axios.get(
-      "https://api.genshin.dev/weapons/all"
-    );
-    let allWeaponData = allWeaponCall.data;
-
-
     let reformattedWeaponData = [];
-    // works bc lengths of allWeaponData and allWeaponIds are the same
-    let i = 0;
 
-    // todo: add image
-    for (weapon of allWeaponData) {
+    for (weapon in weaponData) {
       let currWeapon = {};
-      currWeapon['name'] = weapon['name'];
-      currWeapon['id'] = allWeaponIds[i];
-      currWeapon['icon'] = `https://api.genshin.dev/characters/${allWeaponIds[i]}/icon`;
-      currWeapon['type'] = weapon['type'];
+      let { name, id, type, rarity } = weaponData[weapon];
+
+      currWeapon['name'] = name;
+      currWeapon['id'] = id;
+      currWeapon['icon'] = `https://paimon.moe/images/weapons/${id}.png`;
+      currWeapon['type'] = type;
+      currWeapon['rarity'] = rarity;
+
       reformattedWeaponData.push(currWeapon);
-      i++;
     }
 
 
