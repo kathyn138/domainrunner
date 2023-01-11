@@ -1,6 +1,5 @@
 const express = require('express');
 const router = new express.Router();
-const axios = require('axios');
 
 const charData = require("../data/characters");
 
@@ -21,7 +20,7 @@ router.get("/", async function (req, res, next) {
       currChar['icon'] = `https://paimon.moe/images/characters/${id}.png`;
       currChar['rarity'] = rarity;
       currChar['element'] = element;
-      
+
       reformattedCharData.push(currChar);
     }
 
