@@ -1,14 +1,14 @@
 const itemList = require("./itemList");
 
 const elements = require("./elements");
-const weapons = require("./weapons");
+const weaponTypes = require("./weaponTypes");
 
 module.exports = {
   albedo: {
     id: 'albedo',
     name: 'Albedo',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 13226,
       atk: 251,
@@ -153,7 +153,7 @@ module.exports = {
     id: 'aloy',
     name: 'Aloy',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 10899,
       atk: 234,
@@ -298,7 +298,7 @@ module.exports = {
     id: 'amber',
     name: 'Amber',
     rarity: 4,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9461,
       atk: 223,
@@ -443,7 +443,7 @@ module.exports = {
     id: 'arataki_itto',
     name: 'Arataki Itto',
     rarity: 5,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 12858,
       atk: 227,
@@ -588,7 +588,7 @@ module.exports = {
     id: 'barbara',
     name: 'Barbara',
     rarity: 4,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 9787,
       atk: 159,
@@ -733,7 +733,7 @@ module.exports = {
     id: 'beidou',
     name: 'Beidou',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 13050,
       atk: 225,
@@ -878,7 +878,7 @@ module.exports = {
     id: 'bennett',
     name: 'Bennett',
     rarity: 4,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 12397,
       atk: 191,
@@ -1023,7 +1023,7 @@ module.exports = {
     id: 'candace',
     name: 'Candace',
     rarity: 4,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 10875,
       atk: 212,
@@ -1168,7 +1168,7 @@ module.exports = {
     id: 'chongyun',
     name: 'Chongyun',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 10984,
       atk: 223,
@@ -1313,7 +1313,7 @@ module.exports = {
     id: 'collei',
     name: 'Collei',
     rarity: 4,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9787,
       atk: 200,
@@ -1458,7 +1458,7 @@ module.exports = {
     id: 'cyno',
     name: 'Cyno',
     rarity: 5,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 12491,
       atk: 318,
@@ -1603,7 +1603,7 @@ module.exports = {
     id: 'diluc',
     name: 'Diluc',
     rarity: 5,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 12981,
       atk: 335,
@@ -1748,7 +1748,7 @@ module.exports = {
     id: 'diona',
     name: 'Diona',
     rarity: 4,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9570,
       atk: 212,
@@ -1893,7 +1893,7 @@ module.exports = {
     id: 'dori',
     name: 'Dori',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 12397,
       atk: 223,
@@ -2038,7 +2038,7 @@ module.exports = {
     id: 'eula',
     name: 'Eula',
     rarity: 5,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 13226,
       atk: 342,
@@ -2183,7 +2183,7 @@ module.exports = {
     id: 'faruzan',
     name: 'Faruzan',
     rarity: 4,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9570,
       atk: 196,
@@ -2328,7 +2328,7 @@ module.exports = {
     id: 'fischl',
     name: 'Fischl',
     rarity: 4,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9189,
       atk: 244,
@@ -2473,7 +2473,7 @@ module.exports = {
     id: 'ganyu',
     name: 'Ganyu',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9797,
       atk: 335,
@@ -2618,7 +2618,7 @@ module.exports = {
     id: 'gorou',
     name: 'Gorou',
     rarity: 4,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9570,
       atk: 183,
@@ -2763,7 +2763,7 @@ module.exports = {
     id: 'hu_tao',
     name: 'Hu Tao',
     rarity: 5,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 15552,
       atk: 106,
@@ -2908,7 +2908,7 @@ module.exports = {
     id: 'jean',
     name: 'Jean',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 14695,
       atk: 239,
@@ -3053,7 +3053,7 @@ module.exports = {
     id: 'kaedehara_kazuha',
     name: 'Kaedehara Kazuha',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 13348,
       atk: 297,
@@ -3198,7 +3198,7 @@ module.exports = {
     id: 'kaeya',
     name: 'Kaeya',
     rarity: 4,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 11636,
       atk: 223,
@@ -3343,7 +3343,7 @@ module.exports = {
     id: 'kamisato_ayaka',
     name: 'Kamisato Ayaka',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 12858,
       atk: 342,
@@ -3488,7 +3488,7 @@ module.exports = {
     id: 'kamisato_ayato',
     name: 'Kamisato Ayato',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 13715,
       atk: 299,
@@ -3633,7 +3633,7 @@ module.exports = {
     id: 'keqing',
     name: 'Keqing',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 13103,
       atk: 323,
@@ -3778,7 +3778,7 @@ module.exports = {
     id: 'klee',
     name: 'Klee',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 10287,
       atk: 311,
@@ -3923,7 +3923,7 @@ module.exports = {
     id: 'kujou_sara',
     name: 'Kujou Sara',
     rarity: 4,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 9570,
       atk: 195,
@@ -4068,7 +4068,7 @@ module.exports = {
     id: 'kuki_shinobu',
     name: 'Kuki Shinobu',
     rarity: 4,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 12289,
       atk: 212,
@@ -4213,7 +4213,7 @@ module.exports = {
     id: 'layla',
     name: 'Layla',
     rarity: 4,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 11092,
       atk: 217,
@@ -4358,7 +4358,7 @@ module.exports = {
     id: 'lisa',
     name: 'Lisa',
     rarity: 4,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 9570,
       atk: 232,
@@ -4503,7 +4503,7 @@ module.exports = {
     id: 'mona',
     name: 'Mona',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 10409,
       atk: 287,
@@ -4648,7 +4648,7 @@ module.exports = {
     id: 'nahida',
     name: 'Nahida',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 10360,
       atk: 299,
@@ -4793,7 +4793,7 @@ module.exports = {
     id: 'nilou',
     name: 'Nilou',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 15185,
       atk: 230,
@@ -4938,7 +4938,7 @@ module.exports = {
     id: 'ningguang',
     name: 'Ningguang',
     rarity: 4,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 9787,
       atk: 212,
@@ -5083,7 +5083,7 @@ module.exports = {
     id: 'noelle',
     name: 'Noelle',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 12071,
       atk: 191,
@@ -5228,7 +5228,7 @@ module.exports = {
     id: 'qiqi',
     name: 'Qiqi',
     rarity: 5,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 12368,
       atk: 287,
@@ -5373,7 +5373,7 @@ module.exports = {
     id: 'raiden_shogun',
     name: 'Raiden Shogun',
     rarity: 5,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 12907,
       atk: 337,
@@ -5518,7 +5518,7 @@ module.exports = {
     id: 'razor',
     name: 'Razor',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 11962,
       atk: 234,
@@ -5663,7 +5663,7 @@ module.exports = {
     id: 'rosaria',
     name: 'Rosaria',
     rarity: 4,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 12289,
       atk: 240,
@@ -5808,7 +5808,7 @@ module.exports = {
     id: 'sangonomiya_kokomi',
     name: 'Sangonomiya Kokomi',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 13471,
       atk: 234,
@@ -5953,7 +5953,7 @@ module.exports = {
     id: 'sayu',
     name: 'Sayu',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 11854,
       atk: 244,
@@ -6098,7 +6098,7 @@ module.exports = {
     id: 'shenhe',
     name: 'Shenhe',
     rarity: 5,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 12993,
       atk: 304,
@@ -6243,7 +6243,7 @@ module.exports = {
     id: 'shikanoin_heizou',
     name: 'Shikanoin Heizou',
     rarity: 4,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 10657,
       atk: 225,
@@ -6388,7 +6388,7 @@ module.exports = {
     id: 'sucrose',
     name: 'Sucrose',
     rarity: 4,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 9244,
       atk: 170,
@@ -6533,7 +6533,7 @@ module.exports = {
     id: 'tartaglia',
     name: 'Tartaglia',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 13103,
       atk: 301,
@@ -6678,7 +6678,7 @@ module.exports = {
     id: 'thoma',
     name: 'Thoma',
     rarity: 4,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 10331,
       atk: 202,
@@ -6823,7 +6823,7 @@ module.exports = {
     id: 'tighnari',
     name: 'Tighnari',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 10850,
       atk: 268,
@@ -6969,7 +6969,7 @@ module.exports = {
     id: 'traveler_anemo',
     rarity: 5,
     element: elements.anemo,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     sex: "player's choice",
     nation: 'mondstadt',
     ascension: [
@@ -7060,7 +7060,7 @@ module.exports = {
     id: 'traveler_geo',
     rarity: 5,
     element: elements.geo,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     sex: "player's choice",
     nation: 'liyue',
     ascension: [
@@ -7176,7 +7176,7 @@ module.exports = {
     id: 'traveler_electro',
     rarity: 5,
     element: elements.electro,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     sex: "player's choice",
     nation: 'inazuma',
     ascension: [
@@ -7267,7 +7267,7 @@ module.exports = {
     name: 'Traveler (Dendro)',
     rarity: 5,
     element: elements.dendro,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 10875,
       atk: 212,
@@ -7432,7 +7432,7 @@ module.exports = {
     id: 'venti',
     name: 'Venti',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 10531,
       atk: 263,
@@ -7577,7 +7577,7 @@ module.exports = {
     id: 'wanderer',
     name: 'Wanderer',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 10164,
       atk: 328,
@@ -7722,7 +7722,7 @@ module.exports = {
     id: 'xiangling',
     name: 'Xiangling',
     rarity: 4,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 10875,
       atk: 225,
@@ -7867,7 +7867,7 @@ module.exports = {
     id: 'xiao',
     name: 'Xiao',
     rarity: 5,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 12736,
       atk: 349,
@@ -8012,7 +8012,7 @@ module.exports = {
     id: 'xingqiu',
     name: 'Xingqiu',
     rarity: 4,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 10222,
       atk: 202,
@@ -8157,7 +8157,7 @@ module.exports = {
     id: 'xinyan',
     name: 'Xinyan',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 11201,
       atk: 249,
@@ -8302,7 +8302,7 @@ module.exports = {
     id: 'yae_miko',
     name: 'Yae Miko',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 10372,
       atk: 340,
@@ -8447,7 +8447,7 @@ module.exports = {
     id: 'yanfei',
     name: 'Yanfei',
     rarity: 4,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 9352,
       atk: 240,
@@ -8592,7 +8592,7 @@ module.exports = {
     id: 'yelan',
     name: 'Yelan',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 14450,
       atk: 244,
@@ -8737,7 +8737,7 @@ module.exports = {
     id: 'yoimiya',
     name: 'Yoimiya',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 10164,
       atk: 323,
@@ -8882,7 +8882,7 @@ module.exports = {
     id: 'yun_jin',
     name: 'Yun Jin',
     rarity: 4,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 10657,
       atk: 191,
@@ -9027,7 +9027,7 @@ module.exports = {
     id: 'zhongli',
     name: 'Zhongli',
     rarity: 5,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 14695,
       atk: 251,

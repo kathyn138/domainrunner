@@ -1,5 +1,5 @@
 const itemList = require("./itemList");
-const weapons = require("./weapons");
+const weaponTypes = require("./weaponTypes");
 
 module.exports = {
   wolfs_gravestone: {
@@ -8,7 +8,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "ATK",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -67,7 +67,7 @@ module.exports = {
     rarity: 5,
     atk: 48,
     secondary: "Physical DMG Bonus",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -126,7 +126,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "CRIT Rate",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -185,7 +185,7 @@ module.exports = {
     rarity: 5,
     atk: 48,
     secondary: "CRIT Rate",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -244,7 +244,7 @@ module.exports = {
     rarity: 5,
     atk: 48,
     secondary: "Energy Recharge",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -303,7 +303,7 @@ module.exports = {
     rarity: 5,
     atk: 48,
     secondary: "Energy Recharge",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -362,7 +362,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "ATK",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -421,7 +421,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "ATK",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -480,7 +480,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "ATK",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -539,7 +539,7 @@ module.exports = {
     rarity: 5,
     atk: 48,
     secondary: "CRIT Rate",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -598,7 +598,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -657,7 +657,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "Energy Recharge",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -716,7 +716,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "ATK",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -775,7 +775,7 @@ module.exports = {
     rarity: 5,
     atk: 48,
     secondary: "ATK",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -834,7 +834,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -893,7 +893,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Energy Recharge",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -952,7 +952,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "paimon's bargains",
     ascension: [
       {
@@ -1011,7 +1011,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "ATK",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -1070,7 +1070,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Elemental Mastery",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "forging",
     ascension: [
       {
@@ -1129,7 +1129,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Physical DMG Bonus",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "adventure rank 10 reward, forging",
     ascension: [
       {
@@ -1188,7 +1188,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -1247,7 +1247,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT Rate",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "battle pass",
     ascension: [
       {
@@ -1306,7 +1306,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "forging",
     ascension: [
       {
@@ -1365,7 +1365,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "CRIT DMG",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "paimon's bargains",
     ascension: [
       {
@@ -1424,7 +1424,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Elemental Mastery",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -1483,7 +1483,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT DMG",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "paimon's bargains",
     ascension: [
       {
@@ -1542,7 +1542,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT Rate",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "battle pass",
     ascension: [
       {
@@ -1601,7 +1601,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Physical DMG Bonus",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "forging",
     ascension: [
       {
@@ -1660,7 +1660,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT Rate",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "battle pass",
     ascension: [
       {
@@ -1719,7 +1719,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Energy Recharge",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -1778,7 +1778,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Physical DMG Bonus",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "forging",
     ascension: [
       {
@@ -1837,7 +1837,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "complete festering desire (quest)",
     ascension: [
       {
@@ -1896,7 +1896,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "forging",
     ascension: [
       {
@@ -1955,7 +1955,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "ATK",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "paimon's bargains",
     ascension: [
       {
@@ -2014,7 +2014,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Energy Recharge",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -2073,7 +2073,7 @@ module.exports = {
     rarity: 4,
     atk: 39,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "event exclusive",
     ascension: [
       {
@@ -2132,7 +2132,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "CRIT Rate",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -2191,7 +2191,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "CRIT Rate",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "battle pass",
     ascension: [
       {
@@ -2250,7 +2250,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Energy Recharge",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -2309,7 +2309,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "CRIT Rate",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -2368,7 +2368,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "ATK",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -2427,7 +2427,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "currently unobtainable",
     ascension: [
       {
@@ -2486,7 +2486,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "CRIT DMG",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "paimon's bargains",
     ascension: [
       {
@@ -2545,7 +2545,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT DMG",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "paimon's bargains",
     ascension: [
       {
@@ -2604,7 +2604,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -2663,7 +2663,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "forging",
     ascension: [
       {
@@ -2722,7 +2722,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "DEF",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "forging",
     ascension: [
       {
@@ -2781,7 +2781,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT DMG",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -2840,7 +2840,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Physical DMG Bonus",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "forging",
     ascension: [
       {
@@ -2899,7 +2899,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Energy Recharge",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish, mondstadt archon quest reward",
     ascension: [
       {
@@ -2958,7 +2958,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "paimon's bargains",
     ascension: [
       {
@@ -3017,7 +3017,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -3076,7 +3076,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Elemental Mastery",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -3135,7 +3135,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Energy Recharge",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -3194,7 +3194,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT DMG",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "paimon's bargains",
     ascension: [
       {
@@ -3253,7 +3253,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -3312,7 +3312,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Elemental Mastery",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "forging",
     ascension: [
       {
@@ -3371,7 +3371,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "HP",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "forging",
     ascension: [
       {
@@ -3430,7 +3430,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "ATK",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "paimon's bargains",
     ascension: [
       {
@@ -3489,7 +3489,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Elemental Mastery",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -3548,7 +3548,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "CRIT Rate",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "battle pass",
     ascension: [
       {
@@ -3607,7 +3607,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Physical DMG Bonus",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "forging",
     ascension: [
       {
@@ -3666,7 +3666,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Energy Recharge",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -3725,7 +3725,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "HP",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -3784,7 +3784,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "ATK",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "paimon's bargains",
     ascension: [
       {
@@ -3843,7 +3843,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Elemental Mastery",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -3902,7 +3902,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "ATK",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "forging",
     ascension: [
       {
@@ -3961,7 +3961,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "HP",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -4020,7 +4020,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "ATK",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -4079,7 +4079,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "Elemental Mastery",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "from chen the sharp",
     ascension: [
       {
@@ -4138,7 +4138,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish, chests",
     ascension: [
       {
@@ -4197,7 +4197,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "Energy Recharge",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "chests",
     ascension: [
       {
@@ -4256,7 +4256,7 @@ module.exports = {
     rarity: 3,
     atk: 40,
     secondary: "ATK",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "chests",
     ascension: [
       {
@@ -4315,7 +4315,7 @@ module.exports = {
     rarity: 3,
     atk: 38,
     secondary: "CRIT Rate",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -4374,7 +4374,7 @@ module.exports = {
   //   rarity: 3,
   //   atk: 40,
   //   secondary: 'Elemental Mastery',
-  //   type: weapons.claymore,
+  //   type: weaponTypes.claymore,
   //   source: 'chests',
   //   ascension: [
   //     {
@@ -4433,7 +4433,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "CRIT DMG",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -4492,7 +4492,7 @@ module.exports = {
     rarity: 3,
     atk: 40,
     secondary: "Elemental Mastery",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -4551,7 +4551,7 @@ module.exports = {
   //   rarity: 3,
   //   atk: 40,
   //   secondary: 'ATK',
-  //   type: weapons.bow,
+  //   type: weaponTypes.bow,
   //   source: 'chests',
   //   ascension: [
   //     {
@@ -4610,7 +4610,7 @@ module.exports = {
     rarity: 3,
     atk: 38,
     secondary: "HP",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish, from orban",
     ascension: [
       {
@@ -4669,7 +4669,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "Physical DMG Bonus",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "chests",
     ascension: [
       {
@@ -4728,7 +4728,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "CRIT DMG",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish, kaeya's gain",
     ascension: [
       {
@@ -4787,7 +4787,7 @@ module.exports = {
   //   rarity: 3,
   //   atk: 40,
   //   secondary: 'Elemental Mastery',
-  //   type: weapons.catalyst,
+  //   type: weaponTypes.catalyst,
   //   source: 'chests',
   //   ascension: [
   //     {
@@ -4846,7 +4846,7 @@ module.exports = {
     rarity: 3,
     atk: 38,
     secondary: "HP",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "chests",
     ascension: [
       {
@@ -4905,7 +4905,7 @@ module.exports = {
     rarity: 3,
     atk: 38,
     secondary: "Elemental Mastery",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -4964,7 +4964,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "DEF",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "chests",
     ascension: [
       {
@@ -5023,7 +5023,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "CRIT Rate",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "chests",
     ascension: [
       {
@@ -5082,7 +5082,7 @@ module.exports = {
     rarity: 3,
     atk: 38,
     secondary: "Energy Recharge",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish, from pan guan'er",
     ascension: [
       {
@@ -5141,7 +5141,7 @@ module.exports = {
     rarity: 3,
     atk: 40,
     secondary: "CRIT DMG",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "chests",
     ascension: [
       {
@@ -5200,7 +5200,7 @@ module.exports = {
     rarity: 3,
     atk: 40,
     secondary: "Elemental Mastery",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -5259,7 +5259,7 @@ module.exports = {
     rarity: 3,
     atk: 40,
     secondary: "DEF",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "chests",
     ascension: [
       {
@@ -5318,7 +5318,7 @@ module.exports = {
     rarity: 3,
     atk: 40,
     secondary: "CRIT Rate",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "chests",
     ascension: [
       {
@@ -5377,7 +5377,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "chests",
     ascension: [
       {
@@ -5436,7 +5436,7 @@ module.exports = {
     rarity: 3,
     atk: 39,
     secondary: "HP",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -5495,7 +5495,7 @@ module.exports = {
     rarity: 3,
     atk: 38,
     secondary: "Elemental Mastery",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -5554,7 +5554,7 @@ module.exports = {
     rarity: 2,
     atk: 33,
     secondary: "None",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "chests",
     ascension: [
       {
@@ -5613,7 +5613,7 @@ module.exports = {
     rarity: 2,
     atk: 33,
     secondary: "None",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "chests",
     ascension: [
       {
@@ -5672,7 +5672,7 @@ module.exports = {
     rarity: 2,
     atk: 33,
     secondary: "None",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "chests",
     ascension: [
       {
@@ -5731,7 +5731,7 @@ module.exports = {
     rarity: 2,
     atk: 33,
     secondary: "None",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "chests",
     ascension: [
       {
@@ -5790,7 +5790,7 @@ module.exports = {
     rarity: 2,
     atk: 33,
     secondary: "None",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "chests",
     ascension: [
       {
@@ -5849,7 +5849,7 @@ module.exports = {
     rarity: 1,
     atk: 23,
     secondary: "None",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "chests",
     ascension: [
       {
@@ -5908,7 +5908,7 @@ module.exports = {
     rarity: 1,
     atk: 23,
     secondary: "None",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "chests",
     ascension: [
       {
@@ -5967,7 +5967,7 @@ module.exports = {
     rarity: 1,
     atk: 23,
     secondary: "None",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "chests",
     ascension: [
       {
@@ -6026,7 +6026,7 @@ module.exports = {
     rarity: 1,
     atk: 23,
     secondary: "None",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "chests",
     ascension: [
       {
@@ -6085,7 +6085,7 @@ module.exports = {
     rarity: 1,
     atk: 23,
     secondary: "None",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "chests",
     ascension: [
       {
@@ -6144,7 +6144,7 @@ module.exports = {
     rarity: 5,
     atk: 44,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -6201,7 +6201,7 @@ module.exports = {
     name: "Staff of Homa",
     id: "staff_of_homa",
     rarity: 5,
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     atk: 46,
     secondary: "CRIT DMG",
@@ -6260,7 +6260,7 @@ module.exports = {
     name: "Elegy for the End",
     id: "elegy_for_the_end",
     rarity: 5,
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     atk: 46,
     secondary: "Energy Recharge",
@@ -6321,7 +6321,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Elemental Mastery",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "Invitation of Windblume Event",
     ascension: [
       {
@@ -6380,7 +6380,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "Physical DMG Bonus",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -6439,7 +6439,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Phys DMG%",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "Wish",
     ascension: [
       {
@@ -6498,7 +6498,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Phys DMG%",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "Midsummer Island Adventure Event",
     ascension: [
       {
@@ -6557,7 +6557,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "Elemental Mastery",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -6616,7 +6616,7 @@ module.exports = {
     rarity: 5,
     atk: 48,
     secondary: "CRIT DMG",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -6675,7 +6675,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "CRIT DMG",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -6734,7 +6734,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "forging",
     ascension: [
       {
@@ -6793,7 +6793,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Energy Recharge",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "forging",
     ascension: [
       {
@@ -6852,7 +6852,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "ATK",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "forging",
     ascension: [
       {
@@ -6911,7 +6911,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "forging",
     ascension: [
       {
@@ -6970,7 +6970,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Elemental Mastery",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "forging",
     ascension: [
       {
@@ -7027,7 +7027,7 @@ module.exports = {
     name: "Engulfing Lightning",
     id: "engulfing_lightning",
     rarity: 5,
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     atk: 46,
     secondary: "Energy Recharge",
@@ -7088,7 +7088,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "fishing trade",
     ascension: [
       {
@@ -7147,7 +7147,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "playstation exclusive",
     ascension: [
       {
@@ -7206,7 +7206,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "HP",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -7265,7 +7265,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "Energy Recharge",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "Moonlight Merriment Event",
     ascension: [
       {
@@ -7322,7 +7322,7 @@ module.exports = {
     name: "Polar Star",
     id: "polar_star",
     rarity: 5,
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     atk: 46,
     secondary: "Crit Rate",
@@ -7383,7 +7383,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -7442,7 +7442,7 @@ module.exports = {
     rarity: 4,
     atk: 45,
     secondary: "ATK",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -7501,7 +7501,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "ATK",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -7560,7 +7560,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "DEF",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "Shadows Amidst Snowstorms Event",
     ascension: [
       {
@@ -7619,7 +7619,7 @@ module.exports = {
     rarity: 5,
     atk: 44,
     secondary: "CRIT DMG",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "wish",
     ascension: [
       {
@@ -7678,7 +7678,7 @@ module.exports = {
     rarity: 5,
     atk: 49,
     secondary: "ATK",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "wish",
     ascension: [
       {
@@ -7737,7 +7737,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "CRIT DMG",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -7796,7 +7796,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "ATK",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "wish",
     ascension: [
       {
@@ -7855,7 +7855,7 @@ module.exports = {
     rarity: 5,
     atk: 46,
     secondary: "CRIT Rate",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "wish",
     ascension: [
       {
@@ -7914,7 +7914,7 @@ module.exports = {
     rarity: 5,
     atk: 44,
     secondary: "CRIT DMG",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "wish",
     ascension: [
       {
@@ -7973,7 +7973,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Energy Recharge",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "event exclusive",
     ascension: [
       {
@@ -8032,7 +8032,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "ATK",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "Story Quest",
     ascension: [
       {
@@ -8091,7 +8091,7 @@ module.exports = {
     rarity: 5,
     atk: 44,
     secondary: "CRIT Rate",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "Wish",
     ascension: [
       {
@@ -8204,7 +8204,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "fishing trade",
     ascension: [
       {
@@ -8317,7 +8317,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Energy Recharge",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     source: "forging",
     ascension: [
       {
@@ -8430,7 +8430,7 @@ module.exports = {
     rarity: 4,
     atk: 42,
     secondary: "Energy Recharge",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     source: "forging",
     ascension: [
       {
@@ -8543,7 +8543,7 @@ module.exports = {
     rarity: 4,
     atk: 41,
     secondary: "ATK%",
-    type: weapons.bow,
+    type: weaponTypes.bow,
     source: "forging",
     ascension: [
       {
@@ -8656,7 +8656,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Elemental Mastery",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     source: "forging",
     ascension: [
       {
@@ -8769,7 +8769,7 @@ module.exports = {
     rarity: 4,
     atk: 44,
     secondary: "Energy Recharge",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     source: "forging",
     ascension: [
       {
@@ -8883,7 +8883,7 @@ module.exports = {
     atk: 44,
     source: "wish",
     secondary: "Crit Rate",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     ascension: [
       {
         items: [
@@ -8996,7 +8996,7 @@ module.exports = {
     atk: 44,
     source: "wish",
     secondary: "HP",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     ascension: [
       {
         items: [
@@ -9109,7 +9109,7 @@ module.exports = {
     atk: 42,
     source: "wish",
     secondary: "Elemental Mastery",
-    type: weapons.claymore,
+    type: weaponTypes.claymore,
     ascension: [
       {
         items: [
@@ -9222,7 +9222,7 @@ module.exports = {
     atk: 42,
     source: "wish",
     secondary: "Elemental Mastery",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     ascension: [
       {
         items: [
@@ -9335,7 +9335,7 @@ module.exports = {
     atk: 42,
     source: "wish",
     secondary: "Elemental Mastery",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     ascension: [
       {
         items: [
@@ -9448,7 +9448,7 @@ module.exports = {
     atk: 42,
     source: "Of Ballads and Brews Event",
     secondary: "ATK",
-    type: weapons.polearm,
+    type: weaponTypes.polearm,
     ascension: [
       {
         items: [
@@ -9561,7 +9561,7 @@ module.exports = {
     atk: 44,
     source: "Wish",
     secondary: "Elemental Mastery",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     ascension: [
       {
         items: [
@@ -9674,7 +9674,7 @@ module.exports = {
     atk: 48,
     source: "Wish",
     secondary: "CRIT Damage",
-    type: weapons.catalyst,
+    type: weaponTypes.catalyst,
     ascension: [
       {
         items: [
@@ -9787,7 +9787,7 @@ module.exports = {
     atk: 42,
     source: "Akitsu Kimodameshi Event",
     secondary: "Elemental Mastery",
-    type: weapons.sword,
+    type: weaponTypes.sword,
     ascension: [
       {
         items: [
