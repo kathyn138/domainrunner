@@ -3,8 +3,14 @@ const router = new express.Router();
 const itemData = require("../data/itemList");
 
 /**
- * route for all weapons
- * GET ?name=weapon  =>  [{weapon: weapon}] */
+ * route for all items
+ * GET /  =>  
+ * [{name: '', 
+ * id: '', 
+ * icon: '', 
+ * rarity: '', 
+ * day: [...], 
+ * ...}] */
 
 router.get("/", async function (req, res, next) {
   try {
@@ -29,7 +35,6 @@ router.get("/", async function (req, res, next) {
 
       reformattedItemData.push(currItem);
     }
-
 
     return res.json(reformattedItemData);
   } catch (err) {

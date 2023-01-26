@@ -4,8 +4,14 @@ const router = new express.Router();
 const charData = require("../data/characters");
 
 /**
- * route for getting all characters
- * GET ?name=character  =>  {character: character} */
+ * route for all characters
+ * GET /  =>  
+ * [{name: '', 
+ * id: '', 
+ * icon: '', 
+ * rarity: '', 
+ * element: {...}, 
+ * ...}] */
 
 router.get("/", async function (req, res, next) {
   try {

@@ -4,7 +4,13 @@ const weaponData = require("../data/weaponList");
 
 /**
  * route for all weapons
- * GET ?name=weapon  =>  {weapon: weapon} */
+ * GET /  =>  
+ * [{name: '', 
+ * id: '', 
+ * icon: '', 
+ * rarity: '', 
+ * type: {...}, 
+ * ...}] */
 
 router.get("/", async function (req, res, next) {
   try {
@@ -17,12 +23,11 @@ router.get("/", async function (req, res, next) {
       currWeapon['name'] = name;
       currWeapon['id'] = id;
       currWeapon['icon'] = `https://paimon.moe/images/weapons/${id}.png`;
-      currWeapon['type'] = type;
       currWeapon['rarity'] = rarity;
+      currWeapon['type'] = type;
 
       reformattedWeaponData.push(currWeapon);
     }
-
 
     return res.json(reformattedWeaponData);
   } catch (err) {
