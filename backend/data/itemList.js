@@ -1,6 +1,4 @@
 module.exports = {
-  unknown: { id: "unknown", name: "unknown" },
-  none: { id: "none", name: "none" },
   mystic_enhancement_ore: {
     id: "mystic_enhancement_ore",
     name: "Mystic Enhancement Ore",
