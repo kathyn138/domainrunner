@@ -9,3 +9,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 66px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 96px;
+  }
+}

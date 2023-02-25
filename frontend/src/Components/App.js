@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
+import Home from './Home';
 import NavBar from './NavBar';
 import RouteList from './RouteList';
 
 function App() {
   return (
-    <div className="container-fluid">
+    <React.Fragment>
       <NavBar />
-      <header className="App-header">
-        hi
-        <RouteList />
-      </header>
-    </div>
+      <div className="container-fluid h-100">
+        <Home />
+      </div>
+    </React.Fragment>
   );
 }
 
