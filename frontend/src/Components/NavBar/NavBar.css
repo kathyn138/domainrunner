@@ -1,0 +1,15 @@
+.navbar-container {
+    max-width: 70%;
+}
+span.navbar-icon-span {
+    padding-left: 2vw;
+}
+.navbar-icon {
+    width: 50px;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar-brand:hover {
+    color: #5C6AC0;
+}
