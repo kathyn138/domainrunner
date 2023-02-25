@@ -3,7 +3,6 @@ import './NavBar.css';
 
 function NavBar() {
   return (
-    <div className="container">
       <nav class="navbar fixed-top bg-body-tertiary">
       <span className="navbar-icon-span"><img className="navbar-icon" src="./favicon.ico" alt="favicon"></img></span>
         <div class="container navbar-container">
@@ -24,7 +23,6 @@ function NavBar() {
           </a>
         </div>
       </nav>
-    </div>
   );
 }
 
