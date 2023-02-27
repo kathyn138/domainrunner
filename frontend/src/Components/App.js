@@ -9,7 +9,9 @@ function App() {
     <React.Fragment>
       <NavBar />
       <div className="container-fluid h-100">
-        <Home />
+        <div className="row h-100 justify-content-center d-flex align-items-center">
+          <Home />
+        </div>
       </div>
     </React.Fragment>
   );
