@@ -1,3 +1,6 @@
+.navbar {
+    background-color: #1F212D;
+}
 .navbar-container {
     max-width: 70%;
 }
@@ -9,6 +12,7 @@ span.navbar-icon-span {
 }
 .navbar-brand {
     font-weight: bold;
+    color: #EBEDFE;
 }
 .navbar-brand:hover {
     color: #5C6AC0;

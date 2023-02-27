@@ -3,7 +3,7 @@ import './NavBar.css';
 
 function NavBar() {
   return (
-      <nav className="navbar fixed-top bg-body-tertiary">
+      <nav className="navbar fixed-top">
       <span className="navbar-icon-span"><img className="navbar-icon" src="./favicon.ico" alt="favicon"></img></span>
         <div className="container navbar-container">
           <a className="navbar-brand" href="/">

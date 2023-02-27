@@ -1,4 +1,6 @@
 .home {
-    background-color: aqua;
+    background-color: #1F212D;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px rgba(18, 18, 18, 0.212);
     padding: 200px;
 }

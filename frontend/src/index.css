@@ -1,9 +1,10 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  color: #EBEDFE;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1079259093425979442/bg_copy.png');
+  background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1079260154165465139/bg-dark.png');
   background-repeat: repeat;
 }
 
