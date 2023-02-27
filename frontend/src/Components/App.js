@@ -10,7 +10,7 @@ function App() {
       <NavBar />
       <div className="container-fluid h-100">
         <div className="row h-100 justify-content-center d-flex align-items-center">
-          <Home />
+          <RouteList />
         </div>
       </div>
     </React.Fragment>
