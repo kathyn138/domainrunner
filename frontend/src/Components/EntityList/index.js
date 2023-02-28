@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Entity from '../Entity';
 import './EntityList.css';
@@ -9,22 +9,53 @@ function EntityList(props) {
 
   useEffect(function fetchEntityWhenMounted() {
     async function fetchEntity() {
-      const userResult = await axios.get(`http://localhost:5000/${props.entity}`);
+      const userResult = await axios.get(
+        `http://localhost:5000/${props.entity}`
+      );
       setEntityList(userResult.data);
       setIsLoading(false);
     }
     fetchEntity();
   }, []);
 
-  // if (isLoading) return <i>Loading...</i>;
-  console.log(entityList)
+  console.log(entityList);
+
+  // TODO: check if it's ok to pass strings
+  // instead of entire obj
+
+  let entities = entityList.map((e) => (
+    <Entity
+      name={e.name}
+      key={e.id}
+      id={e.id}
+      icon={e.icon}
+      element={e.element}
+    />
+  ));
+
+  let loadingMessage = (
+    <React.Fragment>
+      <img
+        className="loading-gif"
+        alt=""
+        src="https://cdn.discordapp.com/attachments/709643259789705317/732414740134887545/tenor.gif"
+      ></img>
+      <p className="loading-message">Loading...</p>
+    </React.Fragment>
+  );
+
+  let entityListData = entityList ? entities : loadingMessage;
 
   return (
     <div className="col-8 text-center entity-list">
-      <h3 className="entity-list-title"><b>{props.entity}</b></h3>
-      <Entity />
+      <div className="row">
+        <h3 className="entity-list-title">
+          <b>{props.entity}</b>
+        </h3>
+      </div>
+      <div className="row">{entityListData}</div>
     </div>
-  )
+  );
 }
 
 export default EntityList;
