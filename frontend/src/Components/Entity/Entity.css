@@ -1,6 +1,5 @@
 .entity-card {
     width: 150px;
-    margin: 20px;
     background-color: #2B2E41;
     overflow-wrap: break-word;
     hyphens: manual;
@@ -21,4 +20,8 @@
 }
 .card-text {
     margin-top: 10px;
+}
+.heart-icon {
+    position: relative;
+    top: 2px;
 }
