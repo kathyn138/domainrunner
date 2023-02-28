@@ -1,7 +1,9 @@
 import React, { useState, useEffect }  from 'react';
 import axios from 'axios';
+import Entity from '../Entity';
+import './EntityList.css';
 
-function EntityContainer(props) {
+function EntityList(props) {
   const [isLoading, setIsLoading] = useState(true);
   const [entityList, setEntityList] = useState([]);
 
@@ -14,11 +16,15 @@ function EntityContainer(props) {
     fetchEntity();
   }, []);
 
-  if (isLoading) return <i>Loading...</i>;
+  // if (isLoading) return <i>Loading...</i>;
+  console.log(entityList)
 
   return (
-    console.log(entityList)
+    <div className="col-8 text-center entity-list">
+      <h3 className="entity-list-title"><b>{props.entity}</b></h3>
+      <Entity />
+    </div>
   )
 }
 
-export default EntityContainer;
+export default EntityList;

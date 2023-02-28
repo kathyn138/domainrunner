@@ -1,0 +1,17 @@
+.entity-card {
+    width: 150px;
+    margin: 20px;
+    background-color: #2B2E41;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+.entity-heart {
+    text-align: right;
+}
+.card-body {
+    max-width: 100%;
+}
+.card-img-top {
+    max-width: 100px;
+    margin-top: 5px;
+}
