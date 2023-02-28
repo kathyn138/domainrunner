@@ -9,7 +9,7 @@ const weaponData = require("../data/weaponList");
  * id: '', 
  * icon: '', 
  * rarity: '', 
- * type: {...}, 
+ * type: '', 
  * ...}] */
 
 router.get("/", async function (req, res, next) {
@@ -18,7 +18,8 @@ router.get("/", async function (req, res, next) {
 
     for (weapon in weaponData) {
       let currWeapon = {};
-      let { name, id, type, rarity } = weaponData[weapon];
+      let { name, id, rarity } = weaponData[weapon];
+      let type = weaponData[weapon].type.id;
 
       currWeapon['name'] = name;
       currWeapon['id'] = id;
