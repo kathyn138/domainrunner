@@ -8,8 +8,8 @@ function RouteList() {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/characters" element={<EntityList entity="characters"/>} />
-      <Route exact path="/weapons" element={<EntityList entity="weapons"/>} />
+      <Route exact path="/characters" element={<EntityList entityCategory="characters"/>} />
+      <Route exact path="/weapons" element={<EntityList entityCategory="weapons"/>} />
       <Route exact path="/tasklist" element={<TaskListContainer />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
