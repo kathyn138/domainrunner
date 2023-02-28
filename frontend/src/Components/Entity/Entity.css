@@ -1,13 +1,33 @@
 .entity-card {
     width: 150px;
-    max-height: 191.51px;
+    height: 191.51px;
     background-color: #2B2E41;
     overflow-wrap: break-word;
     hyphens: manual;
 }
-.card-img-top {
+.card-top-anemo {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080252100929400942/bg-anemo.png');
+}
+.card-top-cryo {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256570291671170/bg-cryo.png');
+}
+.card-top-electro {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256700327665735/bg-electro-.png');
+}
+.card-top-geo {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256817436819507/bg-geo.png');
+}
+.card-top-hydro {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256905957609492/bg-hydro.png')
+}
+.card-top-pyro {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256999545126912/bg-pyro.png');
+}
+.card-top-dendro {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080257722144006234/bg-dendro.png');
+}
+.card-top-img {
     max-width: 100px;
-    margin-top: 5px;
 }
 .multi-line-name {
     overflow-wrap: break-word;
@@ -19,9 +39,10 @@
 }
 .card-body {
     max-width: 100%;
+    padding: 10px;
 }
 .card-text {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .heart-icon {
     position: relative;

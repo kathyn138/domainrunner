@@ -16,12 +16,14 @@ function Entity(props) {
       {/* TODO:  add color/bg to char icon depending on their element
        * issue lies with if entity list represents weapons
        */}
+      <div className={`card-top-${props.element}`}>
 
       <img
-        className="card-img-top"
+        className="card-top-img"
         src={`https://paimon.moe/images/characters/${props.id}.png`}
         alt="Card image cap"
       ></img>
+      </div>
       <div className="card-body">
         <h6 className={`card-title ${nameType}`}>
           <b>{props.name}</b>
