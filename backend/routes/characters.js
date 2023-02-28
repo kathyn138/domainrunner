@@ -19,7 +19,8 @@ router.get("/", async function (req, res, next) {
 
     for (char in charData) {
       let currChar = {};
-      let { name, id, element, rarity } = charData[char];
+      let { name, id, rarity } = charData[char];
+      let element = charData[char].element.id;
 
       currChar['name'] = name;
       currChar['id'] = id;
