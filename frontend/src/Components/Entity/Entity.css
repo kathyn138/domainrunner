@@ -1,5 +1,6 @@
 .entity-card {
     width: 150px;
+    max-height: 191.51px;
     background-color: #2B2E41;
     overflow-wrap: break-word;
     hyphens: manual;
@@ -8,8 +9,9 @@
     max-width: 100px;
     margin-top: 5px;
 }
-.entity-heart {
-    text-align: right;
+.multi-line-name {
+    overflow-wrap: break-word;
+    font-size: smaller;
 }
 .element-icon {
     margin-right: 15px;

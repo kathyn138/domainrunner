@@ -2,6 +2,13 @@ import React from 'react';
 import './Entity.css';
 
 function Entity(props) {
+  let nameType = '';
+  let name = props.name.split(' ');
+
+  if (name.length > 1 && name[1].length > 4) {
+    nameType = 'multi-line-name';
+  }
+
   return (
     <div className="col">
 
@@ -10,16 +17,13 @@ function Entity(props) {
        * issue lies with if entity list represents weapons
        */}
 
-       {/* TODO: fix multi line names
-       * makes the cards look uneven rn
-       */}
       <img
         className="card-img-top"
         src={`https://paimon.moe/images/characters/${props.id}.png`}
         alt="Card image cap"
       ></img>
       <div className="card-body">
-        <h6 className="card-title">
+        <h6 className={`card-title ${nameType}`}>
           <b>{props.name}</b>
         </h6>
         <p className="card-text">
