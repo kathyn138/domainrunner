@@ -23,14 +23,16 @@ function EntityList(props) {
   // TODO: check if it's ok to pass strings
   // instead of entire obj
 
+  // category = character or weapon
+  // type = variations within each category
   let entities = entityList.map((e) => (
     <Entity
       name={e.name}
       key={e.id}
       id={e.id}
       icon={e.icon}
-      type={e.type}
       category={props.entityCategory}
+      type={e.type}
     />
   ));
 
