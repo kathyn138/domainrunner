@@ -41,6 +41,9 @@
     max-width: 100%;
     padding: 10px;
 }
+.card-title {
+    height: 50%;
+}
 .card-text {
     margin-bottom: 10px;
 }
