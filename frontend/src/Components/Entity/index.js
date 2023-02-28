@@ -15,7 +15,7 @@ function Entity(props) {
         <div className={`card-top-${props.element}`}>
           <img
             className="card-top-img"
-            src={`https://paimon.moe/images/characters/${props.id}.png`}
+            src={`https://paimon.moe/images/${props.category}/${props.id}.png`}
             alt="Card image cap"
           ></img>
         </div>
@@ -26,7 +26,7 @@ function Entity(props) {
           <p className="card-text">
             <img
               className="element-icon"
-              src={`https://paimon.moe/images/elements/${props.element}.png`}
+              src={`https://paimon.moe/images/${props.category}/${props.type}.png`}
               alt="element"
             ></img>
             <span className="heart-icon">

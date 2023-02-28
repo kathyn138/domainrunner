@@ -10,7 +10,7 @@ function EntityList(props) {
   useEffect(function fetchEntityWhenMounted() {
     async function fetchEntity() {
       const userResult = await axios.get(
-        `http://localhost:5000/${props.entity}`
+        `http://localhost:5000/${props.entityCategory}`
       );
       setEntityList(userResult.data);
       setIsLoading(false);
@@ -29,7 +29,8 @@ function EntityList(props) {
       key={e.id}
       id={e.id}
       icon={e.icon}
-      element={e.element}
+      type={e.type}
+      category={props.entityCategory}
     />
   ));
 
@@ -50,7 +51,7 @@ function EntityList(props) {
     <div className="col-8 text-center entity-list">
       <div className="row">
         <h3 className="entity-list-title">
-          <b>{props.entity}</b>
+          <b>{props.entityCategory}</b>
         </h3>
       </div>
       <div className="row">{entityListData}</div>
