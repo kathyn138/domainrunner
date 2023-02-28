@@ -5,13 +5,23 @@
     overflow-wrap: break-word;
     hyphens: manual;
 }
+.card-img-top {
+    max-width: 100px;
+    margin-top: 5px;
+}
 .entity-heart {
     text-align: right;
+}
+.element-icon {
+    display: block;
+    margin-top: 10px;
+}
+.element-icon > img{
+    width: 25px;
 }
 .card-body {
     max-width: 100%;
 }
-.card-img-top {
-    max-width: 100px;
-    margin-top: 5px;
+.card-text {
+    margin-top: 10px;
 }
