@@ -1,6 +1,4 @@
-function root() {
-  console.log('root');
-  return '';
-}
+import entities from './entities';
+import { combineReducers } from 'redux';
 
-export default root;
+export default combineReducers({ entities });
