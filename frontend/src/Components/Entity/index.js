@@ -5,15 +5,19 @@ function Entity(props) {
   let nameType = '';
   let name = props.name.split(' ');
 
-  // for second half,
+  // for second half of &&,
   // first part is to not shrink short names eg Yae Miko
-  // second part is to catch lengthy names eg Primordial Jade Winged-Spear
-  if (name.length > 1 && (name[1].length > 4 || name.length > 2)) {
+  // second part is to catch multi line names with
+  // short individual parts eg Fruit of Fulfillment
+  if (
+    name.length > 1 &&
+    (name[0].length + name[1].length > 13 || name.length > 2)
+  ) {
     nameType = 'multi-line-name';
   }
 
   // type-icon directory changes depending on entity type
-  // type-icon directory for char !== char 
+  // type-icon directory for char !== char
   let typeIconDir = '';
 
   if (props.category === 'characters') {
