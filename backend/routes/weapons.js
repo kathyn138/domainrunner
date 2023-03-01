@@ -1,18 +1,18 @@
-const express = require("express");
+const express = require('express');
 const router = new express.Router();
-const weaponData = require("../data/weaponList");
+const weaponData = require('../data/weaponList');
 
 /**
  * route for all weapons
- * GET /  =>  
- * [{name: '', 
- * id: '', 
- * icon: '', 
- * rarity: '', 
- * type: '', 
+ * GET /  =>
+ * [{name: '',
+ * id: '',
+ * icon: '',
+ * rarity: '',
+ * type: '',
  * ...}] */
 
-router.get("/", async function (req, res, next) {
+router.get('/', async function (req, res, next) {
   try {
     let reformattedWeaponData = [];
 
@@ -29,6 +29,9 @@ router.get("/", async function (req, res, next) {
 
       reformattedWeaponData.push(currWeapon);
     }
+
+    // alphabetize weapons by name
+    reformattedWeaponData.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
 
     return res.json(reformattedWeaponData);
   } catch (err) {
