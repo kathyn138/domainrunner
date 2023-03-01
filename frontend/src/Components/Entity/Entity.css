@@ -32,7 +32,6 @@
     max-height: 100px;
 }
 .multi-line-name {
-    overflow-wrap: break-word;
     font-size: smaller;
 }
 .type-icon {
