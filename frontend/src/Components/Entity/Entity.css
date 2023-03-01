@@ -1,6 +1,7 @@
 .entity-card {
     width: 150px;
     height: 191.51px;
+    margin-bottom: 25px;
     background-color: #2B2E41;
     overflow-wrap: break-word;
     hyphens: manual;

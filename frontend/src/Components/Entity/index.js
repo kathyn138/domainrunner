@@ -20,7 +20,7 @@ function Entity(props) {
   }
 
   return (
-    <div className="col">
+    <div className="col d-flex justify-content-center">
       <div className="card align-items-center entity-card">
         <div className={`card-top-${props.type}`}>
           <img
