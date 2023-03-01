@@ -6,22 +6,22 @@
     overflow-wrap: break-word;
     hyphens: manual;
 }
-.card-top-anemo {
+:is(.card-top-anemo, .card-top-sword) {
     background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080252100929400942/bg-anemo.png');
 }
-.card-top-cryo {
+:is(.card-top-cryo, .card-top-claymore) {
     background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256570291671170/bg-cryo.png');
 }
-.card-top-electro {
+:is(.card-top-electro, .card-top-catalyst) {
     background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256700327665735/bg-electro-.png');
 }
-.card-top-geo {
+:is(.card-top-geo, .card-top-polearm) {
     background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256817436819507/bg-geo.png');
 }
 .card-top-hydro {
     background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256905957609492/bg-hydro.png')
 }
-.card-top-pyro {
+:is(.card-top-pyro, .card-top-bow) {
     background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256999545126912/bg-pyro.png');
 }
 .card-top-dendro {
