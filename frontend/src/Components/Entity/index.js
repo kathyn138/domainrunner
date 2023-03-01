@@ -5,7 +5,10 @@ function Entity(props) {
   let nameType = '';
   let name = props.name.split(' ');
 
-  if (name.length > 1 && name[1].length > 4) {
+  // for second half,
+  // first part is to not shrink short names eg Yae Miko
+  // second part is to catch lengthy names eg Primordial Jade Winged-Spear
+  if (name.length > 1 && (name[1].length > 4 || name.length > 2)) {
     nameType = 'multi-line-name';
   }
 
