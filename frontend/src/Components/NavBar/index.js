@@ -1,28 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar() {
+  //TODO: remove active styling for link
+  // rn it is black
+
   return (
-      <nav className="navbar fixed-top">
-      <span className="navbar-icon-span"><img className="navbar-icon" src="./favicon.ico" alt="favicon"></img></span>
-        <div className="container navbar-container">
-          <a className="navbar-brand" href="/">
-            Home
-          </a>
-          <a className="navbar-brand" href="/characters">
-            Characters
-          </a>
-          <a className="navbar-brand" href="/weapons">
-            Weapons
-          </a>
-          <a className="navbar-brand" href="/calendar">
-            Calendar
-          </a>
-          <a className="navbar-brand" href="#">
-            Cart
-          </a>
-        </div>
-      </nav>
+    <nav className="navbar fixed-top">
+      <span className="navbar-icon-span">
+        <img className="navbar-icon" src="./favicon.ico" alt="favicon"></img>
+      </span>
+      <div className="container navbar-container">
+        <Link className="navbar-brand" to="/">
+          Home
+        </Link>
+        <Link className="navbar-brand" to="/characters">
+          Characters
+        </Link>
+        <Link className="navbar-brand" to="/weapons">
+          Weapons
+        </Link>
+        <Link className="navbar-brand" to="/calendar">
+          Calendar
+        </Link>
+        <Link className="navbar-brand" to="#">
+          Cart
+        </Link>
+      </div>
+    </nav>
   );
 }
 
