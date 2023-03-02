@@ -11,7 +11,7 @@ function EntityList(props) {
   // store will empty bc haven't yet invoked initial api call
   // potential fix is to save entity data in session
   // or look up entitydata after store is populated
-  
+
   const [isLoading, setIsLoading] = useState(true);
   // const [entityList, setEntityList] = useState([]);
   const entityList = useSelector(store => store.entities[category]);
@@ -25,16 +25,15 @@ function EntityList(props) {
   //   fetchEntity();
   // }, []);
 
-  console.log(entityList);
 
   // TODO: check if it's ok to pass strings
   // instead of entire obj
 
   // category = character or weapon
   // type = variations within each category
-  let entities = Object.keys(entityList).map((e) => (
+  let entities = entityList.map((e) => (
     <Entity
-      entity={entityList[e]}
+      entity={e}
       category={category}
     />
   ));
