@@ -1,6 +1,6 @@
 const express = require('express');
 const router = new express.Router();
-const weaponData = require('../data/weaponList');
+const rawWeaponData = require('../data/weaponList');
 
 /**
  * route for all weapons
@@ -16,10 +16,10 @@ router.get('/', async function (req, res, next) {
   try {
     let reformattedWeaponData = [];
 
-    for (weapon in weaponData) {
+    for (const weapon in rawWeaponData) {
       let currWeapon = {};
-      let { name, id, rarity } = weaponData[weapon];
-      let type = weaponData[weapon].type.id;
+      let { name, id, rarity } = rawWeaponData[weapon];
+      let type = rawWeaponData[weapon].type.id;
 
       currWeapon['name'] = name;
       currWeapon['id'] = id;
