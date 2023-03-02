@@ -1,22 +1,29 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import axios from 'axios';
 import Entity from '../Entity';
 import './EntityList.css';
 
 function EntityList(props) {
-  const [isLoading, setIsLoading] = useState(true);
-  const [entityList, setEntityList] = useState([]);
+  const category = props.entityCategory;
 
-  useEffect(function fetchEntityWhenMounted() {
-    async function fetchEntity() {
-      const userResult = await axios.get(
-        `http://localhost:5000/${props.entityCategory}`
-      );
-      setEntityList(userResult.data);
-      setIsLoading(false);
-    }
-    fetchEntity();
-  }, []);
+  // TODO: fix bug where if you go directly to entity url
+  // store will empty bc haven't yet invoked initial api call
+  // potential fix is to save entity data in session
+  // or look up entitydata after store is populated
+  
+  const [isLoading, setIsLoading] = useState(true);
+  // const [entityList, setEntityList] = useState([]);
+  const entityList = useSelector(store => store.entities[category]);
+
+  // useEffect(function fetchEntityWhenMounted() {
+  //   async function fetchEntity() {
+  //     if (entityList.keys.length > 0) {
+  //       setIsLoading(false);
+  //     }
+  //   }
+  //   fetchEntity();
+  // }, []);
 
   console.log(entityList);
 
@@ -25,14 +32,10 @@ function EntityList(props) {
 
   // category = character or weapon
   // type = variations within each category
-  let entities = entityList.map((e) => (
+  let entities = Object.keys(entityList).map((e) => (
     <Entity
-      name={e.name}
-      key={e.id}
-      id={e.id}
-      icon={e.icon}
-      category={props.entityCategory}
-      type={e.type}
+      entity={entityList[e]}
+      category={category}
     />
   ));
 

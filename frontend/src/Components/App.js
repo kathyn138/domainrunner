@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
-import Home from './Home';
 import NavBar from './NavBar';
 import RouteList from './RouteList';
+import { getEntitiesFromAPI } from '../Actions/entities';
 
 function App() {
+  // TODO: make sure api call runs on initial mount
 
   const dispatch = useDispatch();
+  dispatch(getEntitiesFromAPI());
+  // useEffect(() => {
 
-  dispatch({ type: "GET_ENTITIES"});
+  //   console.log('run')
+  // })
 
   return (
     <React.Fragment>
