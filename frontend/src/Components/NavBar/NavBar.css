@@ -10,7 +10,7 @@ span.navbar-icon-span {
 .navbar-icon {
     width: 50px;
 }
-.navbar-brand {
+.navbar-brand, .navbar-brand:focus {
     font-weight: bold;
     color: #EBEDFE;
 }

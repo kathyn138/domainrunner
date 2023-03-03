@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar() {
-  //TODO: remove active styling for link
-  // rn it is black
-
   return (
     <nav className="navbar fixed-top">
       <span className="navbar-icon-span">
