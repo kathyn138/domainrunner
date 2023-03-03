@@ -6,13 +6,11 @@ import RouteList from './RouteList';
 import { getEntitiesFromAPI } from '../Actions/entities';
 
 function App() {
-  // TODO: make sure api call runs on initial mount
-
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
-    dispatch(getEntitiesFromAPI());  
-  }, [dispatch])
+    dispatch(getEntitiesFromAPI());
+  }, [dispatch]);
 
   return (
     <React.Fragment>
