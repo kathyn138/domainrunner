@@ -10,15 +10,6 @@ function handleError(error) {
   };
 }
 
-export function addEntity(id) {
-  return function (dispatch) {
-    return dispatch({
-      type: ADD_ENTITY,
-      id,
-    });
-  };
-}
-
 function getEntities(characters, weapons) {
   return {
     type: GET_ENTITIES,
@@ -35,14 +26,5 @@ export function getEntitiesFromAPI() {
     } catch (error) {
       dispatch(handleError(error));
     }
-  };
-}
-
-export function removeEntity(id) {
-  return function (dispatch) {
-    return dispatch({
-      type: REMOVE_ENTITY,
-      id,
-    });
   };
 }
