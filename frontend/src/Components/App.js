@@ -9,11 +9,10 @@ function App() {
   // TODO: make sure api call runs on initial mount
 
   const dispatch = useDispatch();
-  dispatch(getEntitiesFromAPI());
-  // useEffect(() => {
-
-  //   console.log('run')
-  // })
+  
+  useEffect(() => {
+    dispatch(getEntitiesFromAPI());  
+  }, [dispatch])
 
   return (
     <React.Fragment>
