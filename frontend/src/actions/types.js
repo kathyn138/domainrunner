@@ -1,3 +1,4 @@
-export const ADD_ENTITY = "ADD_ENTITY";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const CHECK_CART = "CHECK_CART";
 export const GET_ENTITIES = "GET_ENTITIES";
-export const REMOVE_ENTITY = "REMOVE_ENTITY";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";

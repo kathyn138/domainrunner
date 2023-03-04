@@ -1,37 +1,33 @@
-import { ADD_ENTITY, REMOVE_ENTITY } from '../Actions/types';
+import { ADD_TO_CART, CHECK_CART, REMOVE_FROM_CART } from '../Actions/types';
 
 export default function rootReducer(state = {}, action) {
+  const category = action.category;
+  
   switch (action.type) {
-    case ADD_ENTITY:
-      if (category === 'characters') {
-        let addedChars = [...state.characters, action.id];
+    case ADD_TO_CART:
+      let addedEntities = [...state[category], action.id];
 
-        return {
-          ...state,
-          characters: addedChars,
-        };
-      } else {
-        let addedWeapons = [...state, weapons, action.id];
+      return {
+        ...state,
+        category: addedEntities,
+      };
 
-        return {
-          ...state,
-          weapons: addedWeapons,
-        };
+    case CHECK_CART:
+      let inCartStatus = false;
+
+      if (state[category][action.id]) {
+        inCartStatus = true;
       }
 
-    case REMOVE_ENTITY:
-      if (category === 'characters') {
-        let updatedChars = state.characters.filter((c) => c.id !== c.id);
+      return inCartStatus;
 
-        return {
-          ...state,
-          characters: updatedChars,
-        };
-      } else {
-        let updatedWeapons = state.weapons.filter((w) => w.id !== action.id);
+    case REMOVE_FROM_CART:
+      let updatedEntities = state[category].filter((e) => e.id !== e.id);
 
-        return { ...state, weapons: updatedWeapons };
-      }
+      return {
+        ...state,
+        category: updatedEntities,
+      };
 
     default:
       return state;
