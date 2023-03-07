@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addToCart, checkCart, removeFromCart } from '../../Actions/cart';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, removeFromCart } from '../../Actions/cart';
 import './Entity.css';
 
 function Entity(props) {
-  let [inCart, setInCart] = useState(false);
-  let { name, id, type } = props.entity;
   const dispatch = useDispatch();
+  let [inCart, setInCart] = useState(false);
 
+  const { name, id, type } = props.entity;
+  const category = props.category;
+  const cartStoreData = useSelector((store) => store.cart[category]);
+
+  // on mount, check if entity is in cart
   useEffect(() => {
-    let inCartCheck = dispatch(checkCart(props.category, id));
-
-    if (inCartCheck) {
-      setInCart = true;
+    if (cartStoreData.includes(id)) {
+      setInCart(true);
     }
-  }, [dispatch]);
+  }, []);
 
   let nameType = '';
   let nameCheck = name.split(' ');
@@ -40,13 +42,25 @@ function Entity(props) {
     typeIconDir = 'weapons';
   }
 
+  function handleAdd() {
+    dispatch(addToCart(props.category, id));
+    setInCart(true);
+  }
+
+  function handleRemove() {
+    dispatch(removeFromCart(props.category, id));
+    setInCart(false);
+  }
+
   // heart filled in if in cart
-  let heart = inCart ? <i className="fas fa-heart filled-in-heart"
-      onClick={() => dispatch(addToCart(props.category, id))}
+  let heart = inCart ? (
+    <i
+      className="fas fa-heart filled-in-heart"
+      onClick={() => handleRemove()}
     ></i>
-      : <i className="far fa-heart"
-        onClick={() => dispatch(removeFromCart(props.category, id))}
-      ></i>;
+  ) : (
+    <i className="far fa-heart" onClick={() => handleAdd()}></i>
+  );
 
   return (
     <div className="col d-flex justify-content-center">
@@ -68,9 +82,7 @@ function Entity(props) {
               src={`https://paimon.moe/images/${typeIconDir}/${type}.png`}
               alt={type}
             ></img>
-            <span className="heart-icon">
-              {heart}
-            </span>
+            <span className="heart-icon">{heart}</span>
           </p>
         </div>
       </div>

@@ -1,32 +1,32 @@
-import { ADD_TO_CART, CHECK_CART, REMOVE_FROM_CART } from '../Actions/types';
+import { ADD_TO_CART, REMOVE_FROM_CART } from '../Actions/types';
 
-export default function rootReducer(state = {}, action) {
-  const category = action.category;
-  
+const INITIALSTATE = { characters: [], weapons: [] };
+
+export default function rootReducer(state = INITIALSTATE, action) {
+  // TODO: check why undefined at first for action.payload
+  // TODO: check if this is ok error handling bc what happens if
+  // category and id are undefined? it'll throw an error on frontend
+  let category;
+  let id;
+
+  if (action.payload) {
+    category = action.payload.category;
+    id = action.payload.id;
+  }
+
   switch (action.type) {
     case ADD_TO_CART:
-      let addedEntities = [...state[category], action.id];
-
       return {
         ...state,
-        category: addedEntities,
+        [category]: [...state[category], id],
       };
 
-    case CHECK_CART:
-      let inCartStatus = false;
-
-      if (state[category][action.id]) {
-        inCartStatus = true;
-      }
-
-      return inCartStatus;
-
     case REMOVE_FROM_CART:
-      let updatedEntities = state[category].filter((e) => e.id !== e.id);
+      let updatedEntities = state[category].filter((e) => e !== id);
 
       return {
         ...state,
-        category: updatedEntities,
+        [category]: updatedEntities,
       };
 
     default:
