@@ -6,6 +6,7 @@ import RouteList from './RouteList';
 import { getEntitiesFromAPI } from '../Actions/entities';
 
 function App() {
+  //TODO: save cart to session somewhere
   const dispatch = useDispatch();
 
   useEffect(() => {
