@@ -26,6 +26,8 @@ router.get("/", async function (req, res, next) {
       currChar['icon'] = `https://paimon.moe/images/characters/${id}.png`;
       currChar['rarity'] = rarity;
       currChar['type'] = type;
+      currChar['typeIcon'] = `https://paimon.moe/images/elements/${type}.png`
+      currChar['category'] = 'characters'
 
       reformattedCharData.push(currChar);
     }

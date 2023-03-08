@@ -23,10 +23,8 @@ function EntityList(props) {
     [entityStoreData]
   );
 
-  // category = character or weapon
-  // type = variations within each category
   let entities = entityList.map((e) => (
-    <Entity key={e.id} entity={e} category={category} />
+    <Entity key={e.id} entity={e} />
   ));
 
   let loadingMessage = (

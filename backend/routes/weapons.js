@@ -26,6 +26,8 @@ router.get('/', async function (req, res, next) {
       currWeapon['icon'] = `https://paimon.moe/images/weapons/${id}.png`;
       currWeapon['rarity'] = rarity;
       currWeapon['type'] = type;
+      currWeapon['typeIcon'] = `https://paimon.moe/images/weapons/${type}.png`
+      currWeapon['category'] = 'weapons'
 
       reformattedWeaponData.push(currWeapon);
     }

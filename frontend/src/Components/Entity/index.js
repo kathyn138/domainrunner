@@ -7,8 +7,9 @@ function Entity(props) {
   const dispatch = useDispatch();
   let [inCart, setInCart] = useState(false);
 
-  const { name, id, type } = props.entity;
-  const category = props.category;
+  // category = character or weapon
+  // type = variations within each category
+  const { name, icon, id, type, typeIcon, category } = props.entity;
   const cartStoreData = useSelector((store) => store.cart[category]);
 
   // on mount, check if entity is in cart
@@ -32,23 +33,13 @@ function Entity(props) {
     nameType = 'multi-line-name';
   }
 
-  // directory for type-icon changes on entity type
-  // directory for char !== char
-  let typeIconDir = '';
-
-  if (props.category === 'characters') {
-    typeIconDir = 'elements';
-  } else {
-    typeIconDir = 'weapons';
-  }
-
   function handleAdd() {
-    dispatch(addToCart(props.category, id));
+    dispatch(addToCart(category, id));
     setInCart(true);
   }
 
   function handleRemove() {
-    dispatch(removeFromCart(props.category, id));
+    dispatch(removeFromCart(category, id));
     setInCart(false);
   }
 
@@ -68,8 +59,8 @@ function Entity(props) {
         <div className={`card-top-${type}`}>
           <img
             className="card-top-img"
-            src={`https://paimon.moe/images/${props.category}/${id}.png`}
-            alt="Card image cap"
+            src={icon}
+            alt={id}
           ></img>
         </div>
         <div className="card-body">
@@ -79,7 +70,7 @@ function Entity(props) {
           <p className="card-text">
             <img
               className="type-icon"
-              src={`https://paimon.moe/images/${typeIconDir}/${type}.png`}
+              src={typeIcon}
               alt={type}
             ></img>
             <span className="heart-icon">{heart}</span>
