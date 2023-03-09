@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from './Home';
 import EntityList from './EntityList';
-import TaskListContainer from './TaskListContainer';
+import CalendarContainer from './CalendarContainer';
 
 function RouteList() {
   return (
@@ -10,7 +10,7 @@ function RouteList() {
       <Route exact path="/" element={<Home />} />
       <Route exact path="/characters" element={<EntityList entityCategory="characters"/>} />
       <Route exact path="/weapons" element={<EntityList entityCategory="weapons"/>} />
-      <Route exact path="/tasklist" element={<TaskListContainer />} />
+      <Route exact path="/calendar" element={<CalendarContainer />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

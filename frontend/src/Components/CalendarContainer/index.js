@@ -1,14 +1,13 @@
 import React from 'react';
 
-function TaskListContainer() {
-  console.log('here in task list container')
+function CalendarContainer() {
   return (
     <div className="App">
       <header className="App-header">
-        tasklistcontainer
+        CalendarContainer
       </header>
     </div>
   );
 }
 
-export default TaskListContainer;
+export default CalendarContainer;
