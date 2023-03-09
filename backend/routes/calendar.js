@@ -2,11 +2,11 @@ const express = require('express');
 const router = new express.Router();
 const rawCharData = require('../data/characters');
 const rawWeaponData = require('../data/weaponList');
-const rawItemData = require('../data/itemList');
 
+//TODO: fix below comment route
 /**
  * route for generating calendar
- * GET /  =>
+ * POST /  =>
  * [{name: '',
  * id: '',
  * icon: '',
@@ -14,7 +14,8 @@ const rawItemData = require('../data/itemList');
  * type: '',
  * ...}] */
 
-router.get('/', async function (req, res, next) {
+//TODO: only generate new calendar if cart hasn't changed
+router.post('/', async function (req, res, next) {
   try {
     let calendar = {
       monday: [],
@@ -27,8 +28,11 @@ router.get('/', async function (req, res, next) {
       any: [],
     };
 
-    //TODO: add comments
-
+    /**
+     * rawItem data has excess info
+     * desired data structure for each formatted item:
+     * { itemId: '...', itemIcon: '...', day: [...] }
+     */
     function formatItemData(rawItem) {
       const { id, day } = rawItem;
       let formattedItem = {};
@@ -36,6 +40,7 @@ router.get('/', async function (req, res, next) {
       formattedItem['itemId'] = id;
       formattedItem['itemIcon'] = `https://paimon.moe/images/items/${id}.png`;
 
+      // not all items have limited availability
       if (!day) {
         formattedItem['day'] = 'any';
       } else {
@@ -45,24 +50,39 @@ router.get('/', async function (req, res, next) {
       return formattedItem;
     }
 
-    // for a given entity,
-    // non repeating items
-    function getAscensionItems(id, category, ascensionLevels) {
+    /**
+     * structure of ascension:
+     * array of obj, where each obj represents 
+     * an ascension level and its required items
+     * [
+     *  {
+     *    items: [{items: [{item, ...}, ...], ...}]
+     *  }, 
+     *  {...}
+     * ]
+     */
+    function getAscensionItems(entity, category, ascension) {
       let items = {};
 
-      for (const a of ascensionLevels) {
-        for (const i of ascensionLevels[a]) {
-          let currRawItem = ascensionLevels[a][i][item];
+      for (const level in ascension) {
+        for (const itemList in ascension[level]) {
+          for (const i in ascension[level][itemList]) {
+            let currRawItem = ascension[level][itemList][i].item;
 
-          if (!items[currRawItem[id]]) {
-            let formattedItem = formatItemData(currRawItem);
+            /**
+             * some items repeat across ascension levels.
+             * want to generate unique entity item pairings
+             */
+            if (!items[currRawItem.id]) {
+              let formattedItem = formatItemData(currRawItem);
 
-            formattedItem['entityId'] = id;
-            formattedItem[
-              'entityIcon'
-            ] = `https://paimon.moe/images/${category}/${id}.png`;
+              formattedItem['entityId'] = entity;
+              formattedItem[
+                'entityIcon'
+              ] = `https://paimon.moe/images/${category}/${entity}.png`;
 
-            items[formattedItem];
+              items[currRawItem.id] = formattedItem;
+            }
           }
         }
       }
@@ -70,36 +90,38 @@ router.get('/', async function (req, res, next) {
       return items;
     }
 
+    // sort entity item pairings by item day availability 
     function addToCalendar(charItems) {
       for (let currItem in charItems) {
-        let availableDays = currItem[day];
+        let availableDays = charItems[currItem].day;
 
         if (availableDays === 'any') {
-          calendar['any'] = currItem;
+          calendar['any'].push(charItems[currItem]);
         } else {
           for (const day of availableDays) {
-            calendar[day].push(...currItem);
+            calendar[day].push(charItems[currItem]);
           }
         }
       }
     }
 
+    // process each cart category separately
     function processCart(cart, category, rawData) {
       if (cart.length) {
         for (const entity of cart) {
           let currEntityItems = getAscensionItems(
             entity,
             category,
-            rawData[ascension]
+            rawData[entity].ascension
           );
-    
+
           addToCalendar(currEntityItems);
         }
       }
     }
 
-    processCart(req.characters, 'characters', rawCharData);
-    processCart(req.weapons, 'weapons', rawWeaponData);
+    processCart(req.body.characters, 'characters', rawCharData);
+    processCart(req.body.weapons, 'weapons', rawWeaponData);
 
     //TODO: sort items in calendar alphabetically
 
