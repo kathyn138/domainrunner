@@ -11,10 +11,13 @@ app.use(morgan("tiny"));
 const characterRoutes = require("./routes/characters");
 const weaponRoutes = require("./routes/weapons");
 const itemRoutes = require("./routes/items");
+const calendarRoutes = require("./routes/calendar");
 
 app.use("/characters", characterRoutes);
 app.use("/weapons", weaponRoutes);
 app.use("/items", itemRoutes);
+app.use("/calendar", calendarRoutes);
+
 
 /** 404 Not Found handler. */
 
