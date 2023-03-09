@@ -21,10 +21,7 @@ module.exports = {
             item: itemList.prithiva_topaz_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.cecilia,
             amount: 3,
@@ -167,10 +164,6 @@ module.exports = {
             amount: 1,
           },
           {
-            item: itemList.none,
-            amount: null,
-          },
-          {
             item: itemList.sand_grease_pupa,
             amount: 3,
           },
@@ -311,10 +304,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.crystal_marrow,
             amount: 3,
@@ -456,10 +446,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.small_lamp_grass,
             amount: 3,
@@ -601,10 +588,7 @@ module.exports = {
             item: itemList.prithiva_topaz_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.onikabuto,
             amount: 3,
@@ -746,10 +730,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.philanemo_mushroom,
             amount: 3,
@@ -891,10 +872,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.noctilucous_jade,
             amount: 3,
@@ -1036,10 +1014,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 3,
@@ -1181,10 +1156,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.henna_berry,
             amount: 3,
@@ -1326,10 +1298,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.cor_lapis,
             amount: 3,
@@ -1471,10 +1440,7 @@ module.exports = {
             item: itemList.nagadus_emerald_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.rukkhashava_mushrooms,
             amount: 3,
@@ -1616,10 +1582,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.scarab,
             amount: 3,
@@ -1761,10 +1724,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.small_lamp_grass,
             amount: 3,
@@ -1906,10 +1866,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.calla_lily,
             amount: 3,
@@ -2051,10 +2008,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.kalpalata_lotus,
             amount: 3,
@@ -2196,10 +2150,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.dandelion_seed,
             amount: 3,
@@ -2341,10 +2292,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.henna_berry,
             amount: 3,
@@ -2486,10 +2434,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.small_lamp_grass,
             amount: 3,
@@ -2631,10 +2576,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.qingxin,
             amount: 3,
@@ -2776,10 +2718,7 @@ module.exports = {
             item: itemList.prithiva_topaz_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.sango_pearl,
             amount: 3,
@@ -2921,10 +2860,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.silk_flower,
             amount: 3,
@@ -3066,10 +3002,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.dandelion_seed,
             amount: 3,
@@ -3211,10 +3144,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.sea_ganoderma,
             amount: 3,
@@ -3356,10 +3286,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.calla_lily,
             amount: 3,
@@ -3501,10 +3428,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.sakura_bloom,
             amount: 3,
@@ -3646,10 +3570,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.sakura_bloom,
             amount: 3,
@@ -3791,10 +3712,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.cor_lapis,
             amount: 3,
@@ -3936,10 +3854,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.philanemo_mushroom,
             amount: 3,
@@ -4081,10 +3996,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.dendrobium,
             amount: 3,
@@ -4226,10 +4138,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.naku_weed,
             amount: 3,
@@ -4371,10 +4280,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.nilotpala_lotus,
             amount: 3,
@@ -4516,10 +4422,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.valberry,
             amount: 3,
@@ -4661,10 +4564,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.philanemo_mushroom,
             amount: 3,
@@ -4806,10 +4706,7 @@ module.exports = {
             item: itemList.nagadus_emerald_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.kalpalata_lotus,
             amount: 3,
@@ -4951,10 +4848,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.padisarah,
             amount: 3,
@@ -5096,10 +4990,7 @@ module.exports = {
             item: itemList.prithiva_topaz_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.glaze_lily,
             amount: 3,
@@ -5241,10 +5132,7 @@ module.exports = {
             item: itemList.prithiva_topaz_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.valberry,
             amount: 3,
@@ -5386,10 +5274,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.violetgrass,
             amount: 3,
@@ -5531,10 +5416,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.amakumo_fruit,
             amount: 3,
@@ -5676,10 +5558,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.wolfhook,
             amount: 3,
@@ -5821,10 +5700,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.valberry,
             amount: 3,
@@ -5966,10 +5842,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.sango_pearl,
             amount: 3,
@@ -6111,10 +5984,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.crystal_marrow,
             amount: 3,
@@ -6256,10 +6126,7 @@ module.exports = {
             item: itemList.shivada_jade_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.qingxin,
             amount: 3,
@@ -6401,10 +6268,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.onikabuto,
             amount: 3,
@@ -6546,10 +6410,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 3,
@@ -6691,10 +6552,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.starconch,
             amount: 3,
@@ -6836,10 +6694,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.fluorescent_fungus,
             amount: 3,
@@ -6981,10 +6836,7 @@ module.exports = {
             item: itemList.nagadus_emerald_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.nilotpala_lotus,
             amount: 3,
@@ -7121,7 +6973,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_sliver, amount: 1 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 3 },
           { item: itemList.damaged_mask, amount: 3 },
         ],
@@ -7130,7 +6981,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_fragment, amount: 3 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 10 },
           { item: itemList.damaged_mask, amount: 15 },
         ],
@@ -7139,7 +6989,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_fragment, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 20 },
           { item: itemList.stained_mask, amount: 12 },
         ],
@@ -7148,7 +6997,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_chunk, amount: 3 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 30 },
           { item: itemList.stained_mask, amount: 18 },
         ],
@@ -7157,7 +7005,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_chunk, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 45 },
           { item: itemList.ominous_mask, amount: 12 },
         ],
@@ -7166,7 +7013,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_gemstone, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 60 },
           { item: itemList.ominous_mask, amount: 24 },
         ],
@@ -7212,7 +7058,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_sliver, amount: 1 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 3 },
           { item: itemList.damaged_mask, amount: 3 },
         ],
@@ -7221,7 +7066,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_fragment, amount: 3 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 10 },
           { item: itemList.damaged_mask, amount: 15 },
         ],
@@ -7230,7 +7074,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_fragment, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 20 },
           { item: itemList.stained_mask, amount: 12 },
         ],
@@ -7239,7 +7082,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_chunk, amount: 3 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 30 },
           { item: itemList.stained_mask, amount: 18 },
         ],
@@ -7248,7 +7090,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_chunk, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 45 },
           { item: itemList.ominous_mask, amount: 12 },
         ],
@@ -7257,7 +7098,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_gemstone, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 60 },
           { item: itemList.ominous_mask, amount: 24 },
         ],
@@ -7328,7 +7168,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_sliver, amount: 1 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 3 },
           { item: itemList.damaged_mask, amount: 3 },
         ],
@@ -7337,7 +7176,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_fragment, amount: 3 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 10 },
           { item: itemList.damaged_mask, amount: 15 },
         ],
@@ -7346,7 +7184,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_fragment, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 20 },
           { item: itemList.stained_mask, amount: 12 },
         ],
@@ -7355,7 +7192,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_chunk, amount: 3 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 30 },
           { item: itemList.stained_mask, amount: 18 },
         ],
@@ -7364,7 +7200,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_chunk, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 45 },
           { item: itemList.ominous_mask, amount: 12 },
         ],
@@ -7373,7 +7208,6 @@ module.exports = {
       {
         items: [
           { item: itemList.brilliant_diamond_gemstone, amount: 6 },
-          { item: itemList.none, amount: null },
           { item: itemList.windwheel_aster, amount: 60 },
           { item: itemList.ominous_mask, amount: 24 },
         ],
@@ -7425,10 +7259,7 @@ module.exports = {
             item: itemList.brilliant_diamond_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 3,
@@ -7446,10 +7277,7 @@ module.exports = {
             item: itemList.brilliant_diamond_fragment,
             amount: 3,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 10,
@@ -7467,10 +7295,7 @@ module.exports = {
             item: itemList.brilliant_diamond_fragment,
             amount: 6,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 20,
@@ -7488,10 +7313,7 @@ module.exports = {
             item: itemList.brilliant_diamond_chunk,
             amount: 3,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 30,
@@ -7509,10 +7331,7 @@ module.exports = {
             item: itemList.brilliant_diamond_chunk,
             amount: 6,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 45,
@@ -7530,10 +7349,7 @@ module.exports = {
             item: itemList.brilliant_diamond_gemstone,
             amount: 6,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.windwheel_aster,
             amount: 60,
@@ -7590,10 +7406,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.cecilia,
             amount: 3,
@@ -7735,10 +7548,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.rukkhashava_mushrooms,
             amount: 3,
@@ -7880,10 +7690,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.jueyun_chili,
             amount: 3,
@@ -8025,10 +7832,7 @@ module.exports = {
             item: itemList.vayuda_turquoise_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.qingxin,
             amount: 3,
@@ -8170,10 +7974,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.silk_flower,
             amount: 3,
@@ -8315,10 +8116,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.violetgrass,
             amount: 3,
@@ -8460,10 +8258,7 @@ module.exports = {
             item: itemList.vajrada_amethyst_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.sea_ganoderma,
             amount: 3,
@@ -8605,10 +8400,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.noctilucous_jade,
             amount: 3,
@@ -8750,10 +8542,7 @@ module.exports = {
             item: itemList.nagadus_emerald_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.jueyun_chili,
             amount: 3,
@@ -8895,10 +8684,7 @@ module.exports = {
             item: itemList.varunada_lazurite_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.starconch,
             amount: 3,
@@ -9040,10 +8826,7 @@ module.exports = {
             item: itemList.agnidus_agate_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.naku_weed,
             amount: 3,
@@ -9185,10 +8968,7 @@ module.exports = {
             item: itemList.prithiva_topaz_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.glaze_lily,
             amount: 3,
@@ -9330,10 +9110,7 @@ module.exports = {
             item: itemList.prithiva_topaz_sliver,
             amount: 1,
           },
-          {
-            item: itemList.none,
-            amount: null,
-          },
+          
           {
             item: itemList.cor_lapis,
             amount: 3,
