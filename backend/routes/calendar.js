@@ -52,16 +52,16 @@ router.post('/', async function (req, res, next) {
 
     /**
      * structure of ascension:
-     * array of obj, where each obj represents 
+     * array of obj, where each obj represents
      * an ascension level and its required items
      * [
      *  {
      *    items: [{items: [{item, ...}, ...], ...}]
-     *  }, 
+     *  },
      *  {...}
      * ]
      */
-    function getAscensionItems(entity, category, ascension) {
+    function getAscensionItems(entity, ascension) {
       let items = {};
 
       for (const level in ascension) {
@@ -76,10 +76,8 @@ router.post('/', async function (req, res, next) {
             if (!items[currRawItem.id]) {
               let formattedItem = formatItemData(currRawItem);
 
-              formattedItem['entityId'] = entity;
-              formattedItem[
-                'entityIcon'
-              ] = `https://paimon.moe/images/${category}/${entity}.png`;
+              formattedItem['entityId'] = entity.id;
+              formattedItem['entityIcon'] = entity.icon;
 
               items[currRawItem.id] = formattedItem;
             }
@@ -90,7 +88,7 @@ router.post('/', async function (req, res, next) {
       return items;
     }
 
-    // sort entity item pairings by item day availability 
+    // sort entity item pairings by item day availability
     function addToCalendar(charItems) {
       for (let currItem in charItems) {
         let availableDays = charItems[currItem].day;
@@ -105,14 +103,20 @@ router.post('/', async function (req, res, next) {
       }
     }
 
-    // process each cart category separately
-    function processCart(cart, category, rawData) {
+    function processCart(cart) {
       if (cart.length) {
         for (const entity of cart) {
+          let dataCategory;
+
+          if (entity.category === 'characters') {
+            dataCategory = rawCharData;
+          } else {
+            dataCategory = rawWeaponData;
+          }
+
           let currEntityItems = getAscensionItems(
             entity,
-            category,
-            rawData[entity].ascension
+            dataCategory[entity.id].ascension
           );
 
           addToCalendar(currEntityItems);
@@ -120,8 +124,7 @@ router.post('/', async function (req, res, next) {
       }
     }
 
-    processCart(req.body.characters, 'characters', rawCharData);
-    processCart(req.body.weapons, 'weapons', rawWeaponData);
+    processCart(req.body);
 
     //TODO: sort items in calendar alphabetically
 

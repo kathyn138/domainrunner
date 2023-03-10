@@ -11,7 +11,7 @@ function Entity(props) {
    * category is character or weapon
    * type = variations within each category
    */
-  const { name, icon, id, type, typeIcon } = props.entity;
+  const { name, icon, id, type, typeIcon, category } = props.entity;
   const cartStoreData = useSelector((store) => store.cart);
 
   // on mount, check if entity is in cart
@@ -36,7 +36,7 @@ function Entity(props) {
   }
 
   function handleAdd() {
-    dispatch(addToCart({ name, id, icon }));
+    dispatch(addToCart({ name, id, icon, category }));
     setInCart(true);
   }
 
