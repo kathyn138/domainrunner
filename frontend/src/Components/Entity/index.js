@@ -7,14 +7,16 @@ function Entity(props) {
   const dispatch = useDispatch();
   let [inCart, setInCart] = useState(false);
 
-  // category = character or weapon
-  // type = variations within each category
-  const { name, icon, id, type, typeIcon, category } = props.entity;
-  const cartStoreData = useSelector((store) => store.cart[category]);
+  /**
+   * category is character or weapon
+   * type = variations within each category
+   */
+  const { name, icon, id, type, typeIcon } = props.entity;
+  const cartStoreData = useSelector((store) => store.cart);
 
   // on mount, check if entity is in cart
   useEffect(() => {
-    if (cartStoreData.includes(id)) {
+    if (cartStoreData.filter((e) => e.id === id).length === 1) {
       setInCart(true);
     }
   }, []);
@@ -34,12 +36,12 @@ function Entity(props) {
   }
 
   function handleAdd() {
-    dispatch(addToCart(category, id));
+    dispatch(addToCart({ name, id, icon }));
     setInCart(true);
   }
 
   function handleRemove() {
-    dispatch(removeFromCart(category, id));
+    dispatch(removeFromCart(id));
     setInCart(false);
   }
 
@@ -57,22 +59,14 @@ function Entity(props) {
     <div className="col d-flex justify-content-center">
       <div className="card align-items-center entity-card">
         <div className={`card-top-${type}`}>
-          <img
-            className="card-top-img"
-            src={icon}
-            alt={id}
-          ></img>
+          <img className="card-top-img" src={icon} alt={id}></img>
         </div>
         <div className="card-body">
           <h6 className={`card-title ${nameType}`}>
             <b>{name}</b>
           </h6>
           <p className="card-text">
-            <img
-              className="type-icon"
-              src={typeIcon}
-              alt={type}
-            ></img>
+            <img className="type-icon" src={typeIcon} alt={type}></img>
             <span className="heart-icon">{heart}</span>
           </p>
         </div>
