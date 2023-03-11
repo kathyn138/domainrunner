@@ -1,21 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
+import CalendarDay from '../CalendarDay';
+import './CalendarContainer.css';
 const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
 
 function CalendarContainer() {
+  const [isLoading, setIsLoading] = useState(true);
   const [calendar, setCalendar] = useState([]);
   const cartStoreData = useSelector((store) => store.cart);
 
+  //TODO: check when this is running
+  //ideally when cartStoreData changes & only then
+
+  //TODO: rn it still runs if cart empty lol
+  // put no items or w/e if cart empty
   useEffect(
     function generateCalendarWhenMounted() {
       async function generateCalendar() {
         if (cartStoreData) {
-          let calendarResponse = await axios.post(
-            `${BASE_URL}/calendar`,
-            cartStoreData
-          );
+          let ok = [
+            {
+              name: 'Alhaitham',
+              id: 'alhaitham',
+              icon: 'https://paimon.moe/images/characters/alhaitham.png',
+              category: 'characters',
+            },
+            {
+              name: 'A Thousand Floating Dreams',
+              id: 'a_thousand_floating_dreams',
+              icon:
+                'https://paimon.moe/images/weapons/a_thousand_floating_dreams.png',
+              category: 'weapons',
+            },
+          ];
+          let calendarResponse = await axios.post(`${BASE_URL}/calendar`, ok);
           setCalendar(calendarResponse.data);
+          setIsLoading(false);
         }
       }
       generateCalendar();
@@ -23,15 +44,28 @@ function CalendarContainer() {
     [cartStoreData]
   );
 
-  console.log(calendar);
+  let days = Object.keys(calendar).map(d => {
+    if (calendar[d].length) {
+      return <CalendarDay key={d} day={d} items={calendar[d]} />
+    }
+  });
+
+  let loadingMessage = (
+    <React.Fragment>
+      <p className="loading-message">Loading...</p>
+    </React.Fragment>
+  );
+
+  let display = isLoading ? loadingMessage : days;
+
   return (
-    <div className="col-8 text-center">
+    <div className="col-8 text-center calendar-container">
       <div className="row">
-        <h3 className="something">
-          <b>calenar title</b>
+        <h3 className="calendar-container-title">
+          <b>Calendar</b>
         </h3>
       </div>
-      <div className="row">calendar row 2</div>
+      <div className="row">{display}</div>
     </div>
   );
 }

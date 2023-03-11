@@ -1,0 +1,9 @@
+.calendar-container {
+    background-color: #1F212D;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px rgba(18, 18, 18, 0.212);
+    margin-top: 20px;
+}
+.calendar-container-title {
+    margin: 20px 0px;
+}
