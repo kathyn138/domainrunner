@@ -21,7 +21,7 @@ function NavBar() {
         <Link className="navbar-brand" to="/calendar">
           Calendar
         </Link>
-        <Link className="navbar-brand" to="#">
+        <Link className="navbar-brand" to="/cart">
           Cart
         </Link>
       </div>
