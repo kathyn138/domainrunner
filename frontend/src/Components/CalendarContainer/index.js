@@ -46,13 +46,21 @@ function CalendarContainer() {
 
   let days = Object.keys(calendar).map(d => {
     if (calendar[d].length) {
-      return <CalendarDay key={d} day={d} items={calendar[d]} />
+      if (d !== 'any') {
+        return <CalendarDay key={d} day={d} items={calendar[d]} />
+      } else {
+        return (
+          <div className="row">
+            <CalendarDay key={d} day={d} items={calendar[d]} />
+          </div>
+        )
+      }
     }
   });
 
   let loadingMessage = (
     <React.Fragment>
-      <p className="loading-message">Loading...</p>
+      <p className="loading-message">No items in calendar yet!</p>
     </React.Fragment>
   );
 
