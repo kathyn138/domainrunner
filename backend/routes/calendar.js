@@ -78,6 +78,7 @@ router.post('/', async function (req, res, next) {
 
               formattedItem['entityId'] = entity.id;
               formattedItem['entityIcon'] = entity.icon;
+              formattedItem['entityType'] = entity.type;
 
               items[currRawItem.id] = formattedItem;
             }
