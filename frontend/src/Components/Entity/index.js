@@ -36,7 +36,7 @@ function Entity(props) {
   }
 
   function handleAdd() {
-    dispatch(addToCart({ name, id, icon, category }));
+    dispatch(addToCart({ name, id, icon, category, typeIcon }));
     setInCart(true);
   }
 
