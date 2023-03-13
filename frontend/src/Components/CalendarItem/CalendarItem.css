@@ -1,0 +1,48 @@
+.calendar-item {
+    /* margin-top: 20px;
+    margin-left: 20px; */
+    background-color: #2B2E41;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.calendar-entity-icon {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+}
+.calendar-item-icon {
+    max-width: 100px;
+    max-height: 100px;
+}
+:is(.calendar-anemo, .calendar-sword) {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080252100929400942/bg-anemo.png');
+}
+:is(.calendar-cryo, .calendar-claymore) {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256570291671170/bg-cryo.png');
+}
+:is(.calendar-electro, .calendar-catalyst) {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256700327665735/bg-electro-.png');
+}
+:is(.calendar-geo, .calendar-polearm) {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256817436819507/bg-geo.png');
+}
+.calendar-hydro {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256905957609492/bg-hydro.png')
+}
+:is(.calendar-pyro, .calendar-bow) {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256999545126912/bg-pyro.png');
+}
+.calendar-dendro {
+    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080257722144006234/bg-dendro.png');
+}
+.calendar-remove-icon {
+    font-weight: bold;
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}

@@ -18,23 +18,25 @@ function CalendarContainer() {
   useEffect(
     function generateCalendarWhenMounted() {
       async function generateCalendar() {
-        if (cartStoreData) {
-          let ok = [
-            {
-              name: 'Alhaitham',
-              id: 'alhaitham',
-              icon: 'https://paimon.moe/images/characters/alhaitham.png',
-              category: 'characters',
-            },
-            {
-              name: 'A Thousand Floating Dreams',
-              id: 'a_thousand_floating_dreams',
-              icon:
-                'https://paimon.moe/images/weapons/a_thousand_floating_dreams.png',
-              category: 'weapons',
-            },
-          ];
-          let calendarResponse = await axios.post(`${BASE_URL}/calendar`, ok);
+        if (cartStoreData.length) {
+          // let ok = [
+          //   {
+          //     name: 'Alhaitham',
+          //     id: 'alhaitham',
+          //     icon: 'https://paimon.moe/images/characters/alhaitham.png',
+          //     category: 'characters',
+          //     type: 'dendro'
+          //   },
+          //   {
+          //     name: 'A Thousand Floating Dreams',
+          //     id: 'a_thousand_floating_dreams',
+          //     icon:
+          //       'https://paimon.moe/images/weapons/a_thousand_floating_dreams.png',
+          //     category: 'weapons',
+          //     type: 'catalyst'
+          //   },
+          // ];
+          let calendarResponse = await axios.post(`${BASE_URL}/calendar`, cartStoreData);
           setCalendar(calendarResponse.data);
           setIsLoading(false);
         }
@@ -50,7 +52,7 @@ function CalendarContainer() {
         return <CalendarDay key={d} day={d} items={calendar[d]} />
       } else {
         return (
-          <div className="row">
+          <div className="row any-row">
             <CalendarDay key={d} day={d} items={calendar[d]} />
           </div>
         )

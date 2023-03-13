@@ -6,13 +6,13 @@ function CalendarDay(props) {
   let { day, items } = props;
 
   return (
-    <div className="col">
+    <div className="col calendar-day-container">
       <div className="row">
-        <h3 className="calendar-day-title">
+        <h3 className={`calendar-day-title calendar-${day}-title`}>
           <b>{day}</b>
         </h3>
       </div>
-      <div className="row">
+      <div className="row calendar-day-body">
         {items.map((i) => (
           <CalendarItem key={`${i.itemId}-${i.entityId}`} item={i} />
         ))}

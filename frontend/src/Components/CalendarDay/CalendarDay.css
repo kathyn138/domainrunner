@@ -1,0 +1,28 @@
+.calendar-day-container {
+    border: 1px solid #E8EAFC;
+    border-radius: 20px;
+    margin: 20px;
+}
+.calendar-day-title {
+    text-transform: capitalize;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    color: white;
+    margin-bottom: 0px;
+}
+:is(.calendar-monday-title, .calendar-friday-title) {
+    background-color: #BCACDD;
+}
+:is(.calendar-tuesday-title, .calendar-sunday-title) {
+    background-color: #96CEDD;
+}
+:is(.calendar-wednesday-title, .calendar-saturday-title) {
+    background-color: #6BD4C0;
+}
+:is(.calendar-thursday-title, .calendar-any-title) {
+    background-color: #DDACAC;
+}
+.calendar-day-body {
+    padding-top: 20px;
+    padding-left: 20px;
+}

@@ -7,3 +7,7 @@
 .calendar-container-title {
     margin: 20px 0px;
 }
+.any-row {
+    position: relative;
+    left: .7em;
+}
