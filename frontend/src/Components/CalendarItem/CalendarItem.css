@@ -19,25 +19,25 @@
     max-width: 100px;
 }
 :is(.calendar-anemo, .calendar-sword) {
-    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080252100929400942/bg-anemo.png');
+    background-image: url('../../../public/bg-anemo.png');
 }
 :is(.calendar-cryo, .calendar-claymore) {
-    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256570291671170/bg-cryo.png');
+    background-image: url('../../../public/bg-cryo.png');
 }
 :is(.calendar-electro, .calendar-catalyst) {
-    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256700327665735/bg-electro-.png');
+    background-image: url('../../../public/bg-electro-.png');
 }
 :is(.calendar-geo, .calendar-polearm) {
-    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256817436819507/bg-geo.png');
+    background-image: url('../../../public/bg-geo.png');
 }
 .calendar-hydro {
-    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256905957609492/bg-hydro.png')
+    background-image: url('../../../public/bg-hydro.png')
 }
 :is(.calendar-pyro, .calendar-bow) {
-    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080256999545126912/bg-pyro.png');
+    background-image: url('../../../public/bg-pyro.png');
 }
 .calendar-dendro {
-    background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080257722144006234/bg-dendro.png');
+    background-image: url('../../../public/bg-dendro.png');
 }
 .calendar-remove-icon {
     font-weight: bold;
