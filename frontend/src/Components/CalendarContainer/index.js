@@ -83,9 +83,15 @@ function CalendarContainer() {
   );
 
   let loadingMessage = (
-    <React.Fragment>
-      <p className="loading-message">No items in calendar yet!</p>
-    </React.Fragment>
+    <div className="row align-items-center">
+      <div className="col">
+        <img src="https://cdn.discordapp.com/attachments/709286174879121519/1085312524930535504/E2-VnlpXwAozntb.png"></img>
+      </div>
+      <div className="col">
+        <p>No items in calendar yet!</p>
+        <p>Select some characters or weapons to get started.</p>
+      </div>
+    </div>
   );
 
   let display = isLoading ? loadingMessage : calendarBody;
