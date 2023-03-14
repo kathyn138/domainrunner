@@ -1,10 +1,6 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from '../Actions/types';
 
 export default function rootReducer(state = [], action) {
-  // TODO: check why undefined at first for action.payload
-  // TODO: check if this is ok error handling bc what happens if
-  // category and id are undefined? it'll throw an error on frontend
-  // let category;
   let id;
 
   if (action.payload) {
