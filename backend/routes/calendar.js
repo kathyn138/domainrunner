@@ -3,18 +3,17 @@ const router = new express.Router();
 const rawCharData = require('../data/characters');
 const rawWeaponData = require('../data/weaponList');
 
-//TODO: fix below comment route
 /**
  * route for generating calendar
  * POST /  =>
  * [{name: '',
  * id: '',
  * icon: '',
- * rarity: '',
+ * category: '',
  * type: '',
- * ...}] */
+ * typeIcon: ''},
+ * ...] */
 
-//TODO: only generate new calendar if cart hasn't changed
 router.post('/', async function (req, res, next) {
   try {
     let calendar = {

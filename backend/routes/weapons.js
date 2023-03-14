@@ -9,8 +9,8 @@ const rawWeaponData = require('../data/weaponList');
  * id: '',
  * icon: '',
  * rarity: '',
- * type: '',
- * ...}] */
+ * type: ''},
+ * ...] */
 
 router.get('/', async function (req, res, next) {
   try {

@@ -9,8 +9,8 @@ const rawCharData = require("../data/characters");
  * id: '', 
  * icon: '', 
  * rarity: '', 
- * type: '', 
- * ...}] */
+ * type: ''}, 
+ * ...] */
 
 router.get("/", async function (req, res, next) {
   try {
