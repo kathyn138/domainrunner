@@ -12,7 +12,7 @@ function CalendarDay(props) {
           <b>{day}</b>
         </h3>
       </div>
-      <div className="row calendar-day-body">
+      <div className="row calendar-day-body justify-content-center">
         {items.map((i) => (
           <CalendarItem key={`${i.itemId}-${i.entityId}`} item={i} />
         ))}

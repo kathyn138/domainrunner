@@ -4,8 +4,9 @@ import './CalendarItem.css';
 function CalendarItem(props) {
   const {itemId, itemIcon, entityId, entityIcon, entityType} = props.item;
   console.log(props)
+  //TODO: consider making fixed size for all calendar items for evenness visual
   return (
-    <div className="col d-flex justify-content-center calendar-item">
+    <div className="col d-flex align-items-center justify-content-center calendar-item">
       <img className={`calendar-entity-icon calendar-${entityType}`} src={entityIcon}></img>
       <img className="calendar-item-icon" src={itemIcon}></img>
       {/* todo: figure out if you want to remove indiv item from calendar

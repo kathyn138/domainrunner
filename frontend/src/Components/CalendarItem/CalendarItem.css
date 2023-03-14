@@ -1,21 +1,22 @@
 .calendar-item {
-    /* margin-top: 20px;
-    margin-left: 20px; */
     background-color: #2B2E41;
     border-radius: 5px;
     margin-bottom: 20px;
     margin-right: 20px;
+    position: relative;
+    padding: 10px;
 }
 .calendar-entity-icon {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 30%;
+    max-height: 30%;
     border-radius: 50%;
-    position: relative;
-    left: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 .calendar-item-icon {
-    max-width: 100px;
     max-height: 100px;
+    max-width: 100px;
 }
 :is(.calendar-anemo, .calendar-sword) {
     background-image: url('https://cdn.discordapp.com/attachments/709286174879121519/1080252100929400942/bg-anemo.png');
