@@ -67,12 +67,12 @@ function CalendarContainer() {
 
   let calendarBody = (
     <React.Fragment>
-      {days}
+      <div className="row calendar-days">{days}</div>
       <div className="row">
         <div className="col">
           <button
             type="button"
-            class="btn btn-create-screenshot"
+            className="btn btn-create-screenshot"
             onClick={createScreenshot}
           >
             Generate Screenshot
@@ -90,22 +90,14 @@ function CalendarContainer() {
 
   let display = isLoading ? loadingMessage : calendarBody;
 
-  // function createScreenshot() {
-  //   html2canvas(document.querySelector('.calendar-container')).then(function (
-  //     canvas
-  //   ) {
-  //     document.querySelector('.modal-body').appendChild(canvas);
-  //   });
-  // }
-
   function createScreenshot() {
-    html2canvas(document.querySelector('.calendar-container')).then(
-      (canvas) => {
-        canvas.toBlob(function (blob) {
-          window.saveAs(blob, 'my_image.png');
-        });
-      }
-    );
+    html2canvas(document.querySelector('.calendar-days'), {
+      useCORS: true,
+    }).then((canvas) => {
+      canvas.toBlob(function (blob) {
+        window.saveAs(blob, 'calendar.png');
+      });
+    });
   }
 
   return (
