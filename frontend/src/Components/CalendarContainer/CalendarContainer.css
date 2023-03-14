@@ -11,3 +11,20 @@
     position: relative;
     left: .7em;
 }
+.btn-create-screenshot {
+    background-color: #5c6ac0;
+    color: #EBEDFE;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.btn-create-screenshot:hover {
+    background-color: #eef0ff;
+    color: #5d6cbf;
+}
+.btn-create-screenshot:active, 
+.btn-create-screenshot:active:hover, 
+.btn-create-screenshot:focus {
+    background-color: #eef0ff;
+    color: #5d6cbf;
+    box-shadow: -1px 1px 2px 2px #5d6cbf;
+}

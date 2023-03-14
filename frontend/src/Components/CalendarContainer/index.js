@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
+import html2canvas from 'html2canvas';
+import { saveAs } from 'file-saver';
 import CalendarDay from '../CalendarDay';
 import './CalendarContainer.css';
 const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
@@ -36,7 +38,10 @@ function CalendarContainer() {
           //     type: 'catalyst'
           //   },
           // ];
-          let calendarResponse = await axios.post(`${BASE_URL}/calendar`, cartStoreData);
+          let calendarResponse = await axios.post(
+            `${BASE_URL}/calendar`,
+            cartStoreData
+          );
           setCalendar(calendarResponse.data);
           setIsLoading(false);
         }
@@ -46,19 +51,36 @@ function CalendarContainer() {
     [cartStoreData]
   );
 
-  let days = Object.keys(calendar).map(d => {
+  let days = Object.keys(calendar).map((d) => {
     if (calendar[d].length) {
       if (d !== 'any') {
-        return <CalendarDay key={d} day={d} items={calendar[d]} />
+        return <CalendarDay key={d} day={d} items={calendar[d]} />;
       } else {
         return (
           <div className="row any-row">
             <CalendarDay key={d} day={d} items={calendar[d]} />
           </div>
-        )
+        );
       }
     }
   });
+
+  let calendarBody = (
+    <React.Fragment>
+      {days}
+      <div className="row">
+        <div className="col">
+          <button
+            type="button"
+            class="btn btn-create-screenshot"
+            onClick={createScreenshot}
+          >
+            Generate Screenshot
+          </button>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 
   let loadingMessage = (
     <React.Fragment>
@@ -66,7 +88,25 @@ function CalendarContainer() {
     </React.Fragment>
   );
 
-  let display = isLoading ? loadingMessage : days;
+  let display = isLoading ? loadingMessage : calendarBody;
+
+  // function createScreenshot() {
+  //   html2canvas(document.querySelector('.calendar-container')).then(function (
+  //     canvas
+  //   ) {
+  //     document.querySelector('.modal-body').appendChild(canvas);
+  //   });
+  // }
+
+  function createScreenshot() {
+    html2canvas(document.querySelector('.calendar-container')).then(
+      (canvas) => {
+        canvas.toBlob(function (blob) {
+          window.saveAs(blob, 'my_image.png');
+        });
+      }
+    );
+  }
 
   return (
     <div className="col-8 text-center calendar-container">
@@ -75,7 +115,7 @@ function CalendarContainer() {
           <b>Calendar</b>
         </h3>
       </div>
-      <div className="row">{display}</div>
+      <div className="row calendar-container-body">{display}</div>
     </div>
   );
 }
