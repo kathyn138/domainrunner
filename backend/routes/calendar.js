@@ -6,13 +6,17 @@ const rawWeaponData = require('../data/weaponList');
 /**
  * route for generating calendar
  * POST /  =>
- * [{name: '',
- * id: '',
- * icon: '',
- * category: '',
- * type: '',
- * typeIcon: ''},
- * ...] */
+ * {monday: [{itemId: '',
+ * itemId: '',
+ * itemIcon: '',
+ * day: '',
+ * entityId: '',
+ * entityIcon: '',
+ * entityType: ''}, ...],
+ * tuesday: [...],
+ * ...
+ * any: [...]} 
+ * */
 
 router.post('/', async function (req, res, next) {
   try {
@@ -88,7 +92,23 @@ router.post('/', async function (req, res, next) {
       return items;
     }
 
-    // sort entity item pairings by item day availability
+    // sort items in calendar alphabetically
+    function alphabetizeItems(cal) {
+      for (const day in cal) {
+        /**
+         * can't a.itemId - b.itemId bc need to convert str to num
+         * either use ternary or localeCompare()
+         */
+        cal[day].sort((a, b) =>
+          a.itemId < b.itemId ? -1 : a.itemId > b.itemId ? 1 : 0
+        );
+      }
+    }
+
+    /**
+     * organize entity item pairings by days
+     * then alphabetize items
+     */
     function addToCalendar(charItems) {
       for (let currItem in charItems) {
         let availableDays = charItems[currItem].day;
@@ -101,6 +121,8 @@ router.post('/', async function (req, res, next) {
           }
         }
       }
+
+      alphabetizeItems(calendar);
     }
 
     function processCart(cart) {
@@ -125,8 +147,6 @@ router.post('/', async function (req, res, next) {
     }
 
     processCart(req.body);
-
-    //TODO: sort items in calendar alphabetically
 
     return res.json(calendar);
   } catch (err) {
