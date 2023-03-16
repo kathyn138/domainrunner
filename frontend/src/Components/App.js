@@ -4,14 +4,22 @@ import './App.css';
 import NavBar from './NavBar';
 import RouteList from './RouteList';
 import { getEntitiesFromAPI } from '../Actions/entities';
+import { populateCart } from '../Actions/cart';
 
 function App() {
-  //TODO: save cart to session somewhere
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getEntitiesFromAPI());
   }, [dispatch]);
+
+  // check if cart already in localStorage
+  useEffect(() => {
+    if (localStorage.getItem('cart')) {
+      let cart = localStorage.getItem('cart');
+      dispatch(populateCart(JSON.parse(cart)));
+    }
+  }, []);
 
   return (
     <React.Fragment>

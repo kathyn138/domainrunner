@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from './types';
+import { ADD_TO_CART, REMOVE_FROM_CART, POPULATE_CART } from './types';
 
 export function handleError(error) {
   return {
@@ -23,4 +23,13 @@ export function removeFromCart(id) {
       payload: { id },
     });
   };
+}
+
+export function populateCart(cart) {
+  return function(dispatch) {
+    return dispatch({
+      type: POPULATE_CART,
+      payload: cart
+    });
+  }
 }
