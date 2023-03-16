@@ -26,10 +26,10 @@ export function removeFromCart(id) {
 }
 
 export function populateCart(cart) {
-  return function(dispatch) {
+  return function (dispatch) {
     return dispatch({
       type: POPULATE_CART,
-      payload: cart
+      payload: cart,
     });
-  }
+  };
 }
