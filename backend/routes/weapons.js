@@ -1,6 +1,7 @@
 const express = require('express');
 const router = new express.Router();
 const rawWeaponData = require('../data/weaponList');
+const reformatEntityData = require('../helpers/reformatEntityData');
 
 /**
  * route for all weapons
@@ -14,23 +15,7 @@ const rawWeaponData = require('../data/weaponList');
 
 router.get('/', async function (req, res, next) {
   try {
-    let reformattedWeaponData = [];
-
-    for (const weapon in rawWeaponData) {
-      let currWeapon = {};
-      let { name, id, rarity } = rawWeaponData[weapon];
-      let type = rawWeaponData[weapon].type.id;
-
-      currWeapon['name'] = name;
-      currWeapon['id'] = id;
-      currWeapon['icon'] = `https://paimon.moe/images/weapons/${id}.png`;
-      currWeapon['rarity'] = rarity;
-      currWeapon['type'] = type;
-      currWeapon['typeIcon'] = `https://paimon.moe/images/weapons/${type}.png`
-      currWeapon['category'] = 'weapons'
-
-      reformattedWeaponData.push(currWeapon);
-    }
+    let reformattedWeaponData = reformatEntityData(rawWeaponData, 'weapons');
 
     // alphabetize weapons by name
     reformattedWeaponData.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
