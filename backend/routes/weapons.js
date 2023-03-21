@@ -1,7 +1,7 @@
 const express = require('express');
 const router = new express.Router();
 const rawWeaponData = require('../data/weaponList');
-const formatEntityData = require('../helpers/formatData');
+const { formatEntityData } = require('../helpers/formatData');
 
 /**
  * route for all weapons

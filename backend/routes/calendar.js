@@ -2,8 +2,7 @@ const express = require('express');
 const router = new express.Router();
 const rawCharData = require('../data/characters');
 const rawWeaponData = require('../data/weaponList');
-const addToCalendar = require('../helpers/calendar');
-const getAscensionItems = require('../helpers/calendar');
+const { getAscensionItems, addToCalendar } = require('../helpers/calendar');
 
 /**
  * route for generating calendar

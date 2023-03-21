@@ -1,4 +1,4 @@
-const formatItemData = require('./helpers/formatData');
+const { formatItemData } = require('./formatData');
 
 /**
  * structure of ascension data:
