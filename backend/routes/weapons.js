@@ -1,7 +1,7 @@
 const express = require('express');
 const router = new express.Router();
 const rawWeaponData = require('../data/weaponList');
-const reformatEntityData = require('../helpers/reformatEntityData');
+const formatEntityData = require('../helpers/formatData');
 
 /**
  * route for all weapons
@@ -12,15 +12,14 @@ const reformatEntityData = require('../helpers/reformatEntityData');
  * rarity: '',
  * type: ''},
  * ...] */
-
 router.get('/', async function (req, res, next) {
   try {
-    let reformattedWeaponData = reformatEntityData(rawWeaponData, 'weapons');
+    let formattedWeaponData = formatEntityData(rawWeaponData, 'weapons');
 
     // alphabetize weapons by name
-    reformattedWeaponData.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
+    formattedWeaponData.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
 
-    return res.json(reformattedWeaponData);
+    return res.json(formattedWeaponData);
   } catch (err) {
     return next(err);
   }

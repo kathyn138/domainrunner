@@ -3,7 +3,7 @@
  * and gather only necessary info.
  * category is 'characters' or 'weapons'.
  * type is divisons within categories, eg bow.
- * => 
+ * =>
  * [{name: '',
  * id: '',
  * icon: '',
@@ -13,9 +13,8 @@
  * typeIcon: ''},
  * ...]
  */
-
-function reformatEntityData(rawData, category) {
-  let reformattedEntityData = [];
+function formatEntityData(rawData, category) {
+  let formattedEntityData = [];
 
   for (const entity in rawData) {
     let currEntity = {};
@@ -45,15 +44,38 @@ function reformatEntityData(rawData, category) {
     if (category === 'characters') {
       typeIconSrc = `https://paimon.moe/images/elements/${type}.png`;
     } else {
-      typeIconSrc = `https://paimon.moe/images/weapons/${type}.png`
+      typeIconSrc = `https://paimon.moe/images/weapons/${type}.png`;
     }
 
     currEntity['typeIcon'] = typeIconSrc;
 
-    reformattedEntityData.push(currEntity);
+    formattedEntityData.push(currEntity);
   }
 
-  return reformattedEntityData;
+  return formattedEntityData;
 }
 
-module.exports = reformatEntityData;
+/**
+ * rawItem data has excess info, 
+ * gather only neccessary info for each item.
+ * =>
+ * { itemId: '', itemIcon: '', day: [...] }
+ */
+function formatItemData(rawItem) {
+  const { id, day } = rawItem;
+  let formattedItem = {};
+
+  formattedItem['itemId'] = id;
+  formattedItem['itemIcon'] = `https://paimon.moe/images/items/${id}.png`;
+
+  // not all items have limited availability
+  if (!day) {
+    formattedItem['day'] = 'any';
+  } else {
+    formattedItem['day'] = [...day];
+  }
+
+  return formattedItem;
+}
+
+module.exports = { formatEntityData, formatItemData };

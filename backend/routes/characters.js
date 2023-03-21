@@ -1,23 +1,22 @@
 const express = require('express');
 const router = new express.Router();
 const rawCharData = require('../data/characters');
-const reformatEntityData = require('../helpers/reformatEntityData');
+const formatEntityData = require('../helpers/formatData');
 
 /**
  * route for all characters
- * GET /  =>  
- * [{name: '', 
- * id: '', 
- * icon: '', 
- * rarity: '', 
- * type: ''}, 
+ * GET /  =>
+ * [{name: '',
+ * id: '',
+ * icon: '',
+ * rarity: '',
+ * type: ''},
  * ...] */
-
-router.get("/", async function (req, res, next) {
+router.get('/', async function (req, res, next) {
   try {
-    let reformattedCharData = reformatEntityData(rawCharData, 'characters')
+    let formattedCharData = formatEntityData(rawCharData, 'characters');
 
-    return res.json(reformattedCharData);
+    return res.json(formattedCharData);
   } catch (err) {
     return next(err);
   }
