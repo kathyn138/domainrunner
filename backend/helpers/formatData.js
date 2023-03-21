@@ -56,7 +56,7 @@ function formatEntityData(rawData, category) {
 }
 
 /**
- * rawItem data has excess info, 
+ * rawItem data has excess info,
  * gather only neccessary info for each item.
  * =>
  * { itemId: '', itemIcon: '', day: [...] }
