@@ -50,6 +50,7 @@ function alphabetizeItems(cal) {
       a.itemId < b.itemId ? -1 : a.itemId > b.itemId ? 1 : 0
     );
   }
+  return cal;
 }
 
 /**
