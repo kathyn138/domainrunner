@@ -61,7 +61,7 @@ jest
 ```
 App
 ├── NavBar
-└─┬ RouteList
+└─┬ Routes
   ├── Home
   ├──┬ EntityList 
   │  └── Entity   

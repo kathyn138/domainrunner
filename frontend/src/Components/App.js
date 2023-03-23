@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
 import NavBar from './NavBar';
-import RouteList from './RouteList';
+import Routes from './Routes';
 import { getEntitiesFromAPI } from '../Actions/entities';
 import { populateCart } from '../Actions/cart';
 
@@ -26,7 +26,7 @@ function App() {
       <NavBar />
       <div className="container-fluid h-100">
         <div className="row h-100 justify-content-center d-flex align-items-center">
-          <RouteList />
+          <Routes />
         </div>
       </div>
     </React.Fragment>
