@@ -40,6 +40,7 @@ function CalendarContainer() {
         );
       }
     }
+    return null;
   });
 
   let calendarBody = (

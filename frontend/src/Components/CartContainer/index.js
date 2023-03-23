@@ -22,7 +22,7 @@ function CartContainer() {
   );
 
   let cartItems = cartStoreData.map((e) => (
-    <CartItem key={`cart-${e.entityId}`} entity={e} />
+    <CartItem key={`cart-${e.id}`} entity={e} />
   ));
 
   let display = cartStoreData.length ? cartItems : emptyCartMessage;

@@ -19,7 +19,7 @@ function Entity(props) {
     if (cartStoreData.filter((e) => e.id === id).length === 1) {
       setInCart(true);
     }
-  }, [cartStoreData]);
+  }, [cartStoreData, id]);
 
   let nameType = '';
   let nameCheck = name.split(' ');
