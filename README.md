@@ -3,7 +3,7 @@
 Farming Impact is a calendar generator built 
 with React, Redux, and Node.
 
-<!-- Farming Impact is [live on Netlify](). -->
+Farming Impact is [live on Netlify](https://farmingimpact.netlify.app).
 
 Users can browse for characters or weapons they would like to level up 
 and create a calendar that helps them keep track of what and when to farm. 
