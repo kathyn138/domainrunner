@@ -15,6 +15,7 @@ Calendars can be exported as png screenshots.
 
 ## Table Of Contents
 - [Installation](https://github.com/kathyn138/farmingimpact#installation)
+- [Testing](https://github.com/kathyn138/farmingimpact#testing)
 - [Technologies](https://github.com/kathyn138/farmingimpact#technologies)
 - [Component Hierarchy](https://github.com/kathyn138/farmingimpact#component-hierarchy)
 - [Future Implementations](https://github.com/kathyn138/farmingimpact/#future-implementations)
@@ -34,6 +35,19 @@ Frontend Setup:
 cd frontend
 npm install 
 npm start
+```
+
+## Testing
+Front end unit tests are written with The React Testing Library. Run the tests with the following commands:
+```
+cd frontend
+npm test
+```
+
+Back end unit tests are written with Jest. Run the tests with the following commands:
+```
+cd backend
+jest
 ```
 
 ## Technologies
