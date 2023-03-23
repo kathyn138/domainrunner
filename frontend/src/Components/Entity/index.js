@@ -14,12 +14,12 @@ function Entity(props) {
   const { name, icon, id, type, typeIcon, category } = props.entity;
   const cartStoreData = useSelector((store) => store.cart);
 
-  // on mount, check if entity is in cart
+  // check if entity is in cart
   useEffect(() => {
     if (cartStoreData.filter((e) => e.id === id).length === 1) {
       setInCart(true);
     }
-  }, []);
+  }, [cartStoreData]);
 
   let nameType = '';
   let nameCheck = name.split(' ');

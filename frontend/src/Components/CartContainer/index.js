@@ -9,7 +9,10 @@ function CartContainer() {
   const emptyCartMessage = (
     <div className="row align-items-center">
       <div className="col">
-        <img src="https://cdn.discordapp.com/attachments/709286174879121519/1085312872063709275/E2-VjLtWUAEN-Na.png"></img>
+        <img
+          src="https://cdn.discordapp.com/attachments/709286174879121519/1085312872063709275/E2-VjLtWUAEN-Na.png"
+          alt=""
+        ></img>
       </div>
       <div className="col">
         <p>Cart is currently empty!</p>
@@ -18,7 +21,9 @@ function CartContainer() {
     </div>
   );
 
-  let cartItems = cartStoreData.map((e) => <CartItem key={`cart-${e.entityId}`} entity={e} />);
+  let cartItems = cartStoreData.map((e) => (
+    <CartItem key={`cart-${e.entityId}`} entity={e} />
+  ));
 
   let display = cartStoreData.length ? cartItems : emptyCartMessage;
 

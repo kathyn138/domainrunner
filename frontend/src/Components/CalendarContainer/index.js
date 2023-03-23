@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
 import html2canvas from 'html2canvas';
-import { saveAs } from 'file-saver';
 import CalendarDay from '../CalendarDay';
 import './CalendarContainer.css';
 const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
@@ -63,7 +62,10 @@ function CalendarContainer() {
   let loadingMessage = (
     <div className="row align-items-center">
       <div className="col">
-        <img src="https://cdn.discordapp.com/attachments/709286174879121519/1085312524930535504/E2-VnlpXwAozntb.png"></img>
+        <img
+          src="https://cdn.discordapp.com/attachments/709286174879121519/1085312524930535504/E2-VnlpXwAozntb.png"
+          alt=""
+        ></img>
       </div>
       <div className="col">
         <p>No items in calendar yet!</p>
