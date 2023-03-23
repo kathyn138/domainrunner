@@ -5,7 +5,7 @@ import EntityList from './EntityList';
 import CalendarContainer from './CalendarContainer';
 import CartContainer from './CartContainer';
 
-function Routes() {
+function RouteList() {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
@@ -26,4 +26,4 @@ function Routes() {
   );
 }
 
-export default Routes;
+export default RouteList;
