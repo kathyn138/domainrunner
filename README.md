@@ -10,8 +10,9 @@ and create a calendar that helps them keep track of what and when to farm.
 
 Calendars can be exported as png screenshots. 
 
-
-<!-- [![Screenshot of Demo Video](https://cdn.discordapp.com/attachments/709643259789705317/769330360516739132/unknown.png)](https://www.youtube.com/watch?v=7gzCTY59eqY) -->
+![Alt text](frontend/src/assets/demo-main.gif "Main Demo of App")
+![Alt text](frontend/src/assets/demo-save.gif "Demo of Saving Function")
+![Alt text](frontend/src/assets/demo-calendar.png "Demo of Calendar")
 
 ## Table Of Contents
 - [Installation](https://github.com/kathyn138/farmingimpact#installation)
