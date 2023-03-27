@@ -12,7 +12,8 @@ Calendars can be exported as png screenshots.
 
 ![Alt text](frontend/public/demo-main.gif "Main Demo of App")
 ![Alt text](frontend/public/demo-save.gif "Demo of Saving Function")
-![Alt text](frontend/public/demo-calendar.png "Demo of Calendar")
+<!-- ![Alt text](frontend/public/demo-calendar.png "Demo of Calendar") -->
+<img src="frontend/public/demo-calendar.png" alt="Demo of Calendar" height="500">
 
 ## Table Of Contents
 - [Installation](https://github.com/kathyn138/farmingimpact#installation)
