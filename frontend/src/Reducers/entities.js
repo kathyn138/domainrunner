@@ -9,12 +9,6 @@ export default function rootReducer(state = {}, action) {
         weapons: action.weapons,
       };
 
-    // case ADDPOST:
-    //   return sortByVote([...state, makeTitleFromPost(action.post)]);
-
-    // case REMOVEPOST:
-    //   return state.filter(title => title.id !== action.id);
-
     default:
       return state;
   }
