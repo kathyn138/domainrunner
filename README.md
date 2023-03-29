@@ -75,4 +75,5 @@ App
 
 ## Future Implementations
 - Search for character/weapon
-- Delete items from calendar 
+- Delete items from calendar
+- Mobile view
