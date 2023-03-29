@@ -22,9 +22,9 @@ export function getEntitiesFromAPI() {
     try {
       let charsResponse = await axios.get(`${BASE_URL}/characters`);
       let weaponsResponse = await axios.get(`${BASE_URL}/weapons`);
-      dispatch(getEntities(charsResponse.data, weaponsResponse.data));
+      return dispatch(getEntities(charsResponse.data, weaponsResponse.data));
     } catch (error) {
-      dispatch(handleError(error));
+      return dispatch(handleError(error));
     }
   };
 }
