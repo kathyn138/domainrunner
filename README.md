@@ -77,3 +77,4 @@ App
 - Search for character/weapon
 - Delete items from calendar
 - Mobile view
+- Add talent materials
