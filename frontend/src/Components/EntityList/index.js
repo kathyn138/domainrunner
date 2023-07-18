@@ -23,13 +23,15 @@ function EntityList(props) {
     [entityStoreData]
   );
 
-  let entities = entityList.map((e) => (
-    <Entity key={e.id} entity={e} />
-  ));
+  let entities = entityList.map((e) => <Entity key={e.id} entity={e} />);
 
   let loadingMessage = (
     <React.Fragment>
-      <p className="loading-message">Loading...</p>
+      <p className="loading-message">
+        <div className="spinner-border text-light" role="status">
+          <span className="sr-only">Loading...</span>
+        </div>
+      </p>
     </React.Fragment>
   );
 
