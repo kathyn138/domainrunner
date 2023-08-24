@@ -57,6 +57,8 @@ jest
 - Node
 - HTML/CSS
 - Bootstrap
+- Jest
+- The React Testing Library
 
 ## Component Hierarchy 
 ```
