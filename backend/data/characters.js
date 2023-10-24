@@ -9239,7 +9239,7 @@ module.exports = {
     id: 'wriothesley',
     name: 'Wriothesley',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 13593,
       atk: 311,
@@ -9384,7 +9384,7 @@ module.exports = {
     id: 'neuvillette',
     name: 'Neuvillette',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 14695,
       atk: 208,
@@ -9529,7 +9529,7 @@ module.exports = {
     id: 'freminet',
     name: 'Freminet',
     rarity: 4,
-    weapon: weapons.claymore,
+    weapon: weaponTypes.claymore,
     stats: {
       hp: 12071,
       atk: 255,
@@ -9674,7 +9674,7 @@ module.exports = {
     id: 'lynette',
     name: 'Lynette',
     rarity: 4,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 12397,
       atk: 232,
@@ -9819,7 +9819,7 @@ module.exports = {
     id: 'lyney',
     name: 'Lyney',
     rarity: 5,
-    weapon: weapons.bow,
+    weapon: weaponTypes.bow,
     stats: {
       hp: 11021,
       atk: 318,
@@ -9964,7 +9964,7 @@ module.exports = {
     id: 'kirara',
     name: 'Kirara',
     rarity: 4,
-    weapon: weapons.sword,
+    weapon: weaponTypes.sword,
     stats: {
       hp: 12180,
       atk: 223,
@@ -10109,7 +10109,7 @@ module.exports = {
     id: 'baizhu',
     name: 'Baizhu',
     rarity: 5,
-    weapon: weapons.catalyst,
+    weapon: weaponTypes.catalyst,
     stats: {
       hp: 13348,
       atk: 193,
@@ -10254,7 +10254,7 @@ module.exports = {
     id: 'mika',
     name: 'Mika',
     rarity: 4,
-    weapon: weapons.polearm,
+    weapon: weaponTypes.polearm,
     stats: {
       hp: 12506,
       atk: 223,
