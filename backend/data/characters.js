@@ -9235,4 +9235,1165 @@ module.exports = {
     },
     element: elements.geo,
   },
+  wriothesley: {
+    id: 'wriothesley',
+    name: 'Wriothesley',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 13593,
+      atk: 311,
+      def: 763,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 2,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 4,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 8,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 12,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 20,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+      boss: itemList.primordial_greenbloom,
+    },
+    element: elements.cryo,
+  },
+  neuvillette: {
+    id: 'neuvillette',
+    name: 'Neuvillette',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 14695,
+      atk: 208,
+      def: 576,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 2,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 10,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 4,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 20,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 8,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 30,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 12,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 45,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 20,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 60,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.transoceanic_pearl, itemList.transoceanic_chunk, itemList.xenochromatic_crystal],
+      book: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
+      boss: itemList.everamber,
+    },
+    element: elements.hydro,
+  },
+  freminet: {
+    id: 'freminet',
+    name: 'Freminet',
+    rarity: 4,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 12071,
+      atk: 255,
+      def: 708,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 2,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 10,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 4,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 20,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 8,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 30,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 12,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 45,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 20,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 60,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.transoceanic_pearl, itemList.transoceanic_chunk, itemList.xenochromatic_crystal],
+      book: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+      boss: itemList.worldspan_fern,
+    },
+    element: elements.cryo,
+  },
+  lynette: {
+    id: 'lynette',
+    name: 'Lynette',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12397,
+      atk: 232,
+      def: 712,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 2,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 4,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 8,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 12,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 20,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+      boss: itemList.everamber,
+    },
+    element: elements.anemo,
+  },
+  lyney: {
+    id: 'lyney',
+    name: 'Lyney',
+    rarity: 5,
+    weapon: weapons.bow,
+    stats: {
+      hp: 11021,
+      atk: 318,
+      def: 538,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 3,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 2,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 10,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 4,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 20,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 8,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 30,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 12,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 45,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 20,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 60,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      book: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
+      boss: itemList.primordial_greenbloom,
+    },
+    element: elements.pyro,
+  },
+  kirara: {
+    id: 'kirara',
+    name: 'Kirara',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12180,
+      atk: 223,
+      def: 546,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 3,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 2,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 10,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 4,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 20,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 8,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 30,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 12,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 45,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 20,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 60,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+      book: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+      boss: itemList.everamber,
+    },
+    element: elements.dendro,
+  },
+  baizhu: {
+    id: 'baizhu',
+    name: 'Baizhu',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 13348,
+      atk: 193,
+      def: 500,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 3,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 2,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 10,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 4,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 20,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 8,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 30,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 12,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 45,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 20,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 60,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
+      book: [itemList.teachings_of_gold, itemList.guide_to_gold, itemList.philosophies_of_gold],
+      boss: itemList.worldspan_fern,
+    },
+    element: elements.dendro,
+  },
+  mika: {
+    id: 'mika',
+    name: 'Mika',
+    rarity: 4,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 12506,
+      atk: 223,
+      def: 713,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 3,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 2,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 10,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 4,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 20,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 8,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 30,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 12,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 45,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 20,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 60,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      book: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
+      boss: itemList.mirror_of_mushin,
+    },
+    element: elements.cryo,
+  },
+  
 };
