@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
 import html2canvas from 'html2canvas';
-import * as FileSaver from 'file-saver';
 import CalendarDay from '../CalendarDay';
 import './CalendarContainer.css';
 const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
