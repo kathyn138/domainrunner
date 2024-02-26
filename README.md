@@ -76,6 +76,7 @@ App
 ```
 
 ## Future Implementations
+- Light mode
 - Search for character/weapon
 - Delete items from calendar
 - Mobile view
