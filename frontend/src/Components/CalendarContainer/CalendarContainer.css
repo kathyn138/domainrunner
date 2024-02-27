@@ -1,11 +1,11 @@
 .calendar-container {
-    background-color: #1F212D;
+    background-color: #EEF0FF;
     border-radius: 15px;
     box-shadow: -5px 5px 10px rgba(18, 18, 18, 0.212);
     margin-top: 20px;
 }
 .calendar-days {
-    background-color: #1F212D;
+    background-color: EEF0FF;
     margin: 0px;
 }
 .calendar-container-title {
