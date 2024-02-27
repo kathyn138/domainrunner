@@ -10,7 +10,7 @@ function CartContainer() {
     <div className="row align-items-center">
       <div className="col">
         <img
-          src="https://cdn.discordapp.com/attachments/709286174879121519/1085312872063709275/E2-VjLtWUAEN-Na.png"
+          src="https://cdn.discordapp.com/attachments/709286174879121519/1085312872063709275/E2-VjLtWUAEN-Na.png?ex=65e78de0&is=65d518e0&hm=2f30c475476c1915014034191acee11d3f2a68c964c8efec9712c61f1f5680fc&"
           alt=""
         ></img>
       </div>

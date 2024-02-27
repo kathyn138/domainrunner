@@ -64,7 +64,7 @@ function CalendarContainer() {
     <div className="row align-items-center">
       <div className="col">
         <img
-          src="https://cdn.discordapp.com/attachments/709286174879121519/1085312524930535504/E2-VnlpXwAozntb.png"
+          src="https://cdn.discordapp.com/attachments/709286174879121519/1085312524930535504/E2-VnlpXwAozntb.png?ex=65e78d8e&is=65d5188e&hm=5160422808099e5b935ab3327a67801713d660e525ebba51fe609d64a37b9cfd&"
           alt=""
         ></img>
       </div>
