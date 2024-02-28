@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { setToLS, getFromLS } from '../utils/storage';
+import { setToLS, getFromLS } from '../Utils/storage';
 import _ from 'lodash';
 
 // custom hook to manage themes
 export const useTheme = () => {
   const themes = getFromLS('all-themes');
-  const [theme, setTheme] = useState(themes.data.light);
+  const [theme, setTheme] = useState(themes.data.dark);
   const [themeLoaded, setThemeLoaded] = useState(false);
 
   const setMode = (mode) => {
@@ -22,7 +22,7 @@ export const useTheme = () => {
   useEffect(() => {
     const localTheme = getFromLS('theme');
     // if theme successfully retrieved from localStorage then change
-    localTheme ? setTheme(localTheme) : setTheme(themes.data.light);
+    localTheme ? setTheme(localTheme) : setTheme(themes.data.dark);
     setThemeLoaded(true);
   }, []);
 

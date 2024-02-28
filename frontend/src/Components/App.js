@@ -1,13 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
 import NavBar from './NavBar';
 import RouteList from './RouteList';
 import { getEntitiesFromAPI } from '../Actions/entities';
 import { populateCart } from '../Actions/cart';
+import styled, { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from '../Theme/GlobalStyles';
+import { useTheme } from '../Theme/useTheme';
 
 function App() {
   const dispatch = useDispatch();
+  const { theme, themeLoaded } = useTheme();
+  const [selectedTheme, setSelectedTheme] = useState(theme);
 
   useEffect(() => {
     dispatch(getEntitiesFromAPI());
@@ -21,15 +26,20 @@ function App() {
     }
   }, [dispatch]);
 
+  useEffect(() => {
+    setSelectedTheme(theme);
+  }, [themeLoaded]);
+
   return (
-    <React.Fragment>
+    <ThemeProvider theme={selectedTheme}>
+      <GlobalStyles />
       <NavBar />
       <div className="container-fluid h-100">
         <div className="row h-100 justify-content-center d-flex align-items-center">
           <RouteList />
         </div>
       </div>
-    </React.Fragment>
+    </ThemeProvider>
   );
 }
 
