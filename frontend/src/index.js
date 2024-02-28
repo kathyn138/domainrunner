@@ -5,8 +5,11 @@ import { Provider } from 'react-redux';
 import App from './Components/App';
 import { BrowserRouter } from 'react-router-dom';
 import thunk from 'redux-thunk';
-import './index.css';
 import rootReducer from './Reducers/root';
+import './index.css';
+import * as themes from './Theme/schema.json';
+import { setToLS } from './Utils/storage';
+
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -18,9 +21,12 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 
+const Index = () => setToLS('all-themes', themes.default);
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <Index />
       <BrowserRouter>
         <App />
       </BrowserRouter>
