@@ -7,7 +7,7 @@ function Home() {
       <div className="row">
         <div className="col">
           <img
-            src="../../public/paimon-home.png"
+            src="https://github.com/kathyn138/farmingimpact/blob/main/frontend/src/Assets/paimon-home.png?raw=true"
             alt="home logo"
           ></img>
         </div>
