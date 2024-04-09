@@ -4,7 +4,7 @@ body {
   color: #EBEDFE;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../public/bg-dark.png');
+  background-image: url('./Assets/bg-dark.png');
   background-repeat: repeat;
 }
 

@@ -7,7 +7,7 @@
           "text": "#EBEDFE",
           "button": {
             "text": "#EBEDFE",
-            "backgroundImage": "../public/bg-dark.png"
+            "backgroundImage": "./Assets/bg-dark.png"
           },
           "link": {
             "text": "#EBEDFE",
@@ -26,7 +26,7 @@
           "text": "#0d47a1",
           "button": {
             "text": "#ffffff",
-            "backgroundImage": "../public/bg-light.png"
+            "backgroundImage": "./Assets/bg-light.png"
           },
           "link": {
             "text": "#0d47a1",

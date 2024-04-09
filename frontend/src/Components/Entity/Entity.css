@@ -7,25 +7,25 @@
     hyphens: manual;
 }
 :is(.card-top-anemo, .card-top-sword) {
-    background-image: url('../../../public/bg-anemo.png');
+    background-image: url('../../Assets/bg-anemo.png');
 }
 :is(.card-top-cryo, .card-top-claymore) {
-    background-image: url('../../../public/bg-cryo.png');
+    background-image: url('../../Assets/bg-cryo.png');
 }
 :is(.card-top-electro, .card-top-catalyst) {
-    background-image: url('../../../public/bg-electro-.png');
+    background-image: url('../../Assets/bg-electro-.png');
 }
 :is(.card-top-geo, .card-top-polearm) {
-    background-image: url('../../../public/bg-geo.png');
+    background-image: url('../../Assets/bg-geo.png');
 }
 .card-top-hydro {
-    background-image: url('../../../public/bg-hydro.png')
+    background-image: url('../../Assets/bg-hydro.png')
 }
 :is(.card-top-pyro, .card-top-bow) {
-    background-image: url('../../../public/bg-pyro.png');
+    background-image: url('../../Assets/bg-pyro.png');
 }
 .card-top-dendro {
-    background-image: url('../../../public/bg-dendro.png');
+    background-image: url('../../Assets/bg-dendro.png');
 }
 .card-top-img {
     max-width: 100px;
