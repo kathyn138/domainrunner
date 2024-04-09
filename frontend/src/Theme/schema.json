@@ -7,7 +7,7 @@
           "text": "#EBEDFE",
           "button": {
             "text": "#EBEDFE",
-            "backgroundImage": "https://cdn.discordapp.com/attachments/709286174879121519/1079260154165465139/bg-dark.png?ex=65ed3858&is=65dac358&hm=2a1409c82a00c4f7a9e6e77d0c73ebd9abdc782c9db2fc9699b40274091ea6eb&"
+            "backgroundImage": "../public/bg-dark.png"
           },
           "link": {
             "text": "#EBEDFE",
@@ -26,7 +26,7 @@
           "text": "#0d47a1",
           "button": {
             "text": "#ffffff",
-            "backgroundImage": "https://cdn.discordapp.com/attachments/709286174879121519/1079259093425979442/bg_copy.png?ex=65ed375b&is=65dac25b&hm=7a7715ac1767dc171cd7201240b7384ea328ba048a2f9a465d903a85a3dbd7f6&"
+            "backgroundImage": "../public/bg-light.png"
           },
           "link": {
             "text": "#0d47a1",
