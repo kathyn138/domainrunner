@@ -81,3 +81,4 @@ App
 - Delete items from calendar
 - Mobile view
 - Add talent materials
+- Pop up cart module
